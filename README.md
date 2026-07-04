@@ -1,32 +1,32 @@
 # frienders.co
 
-First draft of the Frienders marketing site. Frienders is an experiences company, est. 2018.
+Marketing site for Frienders, an experiences company est. 2018. Built with Next.js (App Router, TypeScript).
 
 ## Running it
 
-Any static file server works. For example:
+    npm install
+    npm run dev
 
-    python3 -m http.server 4173
+Then open <http://localhost:3000>. There is also a `.claude/launch.json` config named `frienders-site` for the Claude Code preview panel.
 
-Then open <http://localhost:4173>. There is also a `.claude/launch.json` config named `frienders-site` for the Claude Code preview panel.
+`npm run build` produces the production build. The site prerenders fully static.
 
 ## Structure
 
-- `index.html` - the entire site (markup, styles, and script in one file)
-- `assets/img/` - 28 web-optimized photos (max 1600px, JPEG q80) selected and renamed from `source_assets/`
-- `source_assets/` - original photo dumps and the party911.txt concept notes (not served; keep out of production deploys)
+- `app/layout.tsx` - root layout, metadata, and self-hosted fonts (Anton + Inter via next/font)
+- `app/page.tsx` - the one-page site: nav, hero, ticker, story, services, gallery, contact, footer
+- `app/globals.css` - all styles
+- `components/Gallery.tsx` - masonry photo grid with lightbox (client component)
+- `components/Effects.tsx` - scroll-reveal observer (client component)
+- `public/img/` - 28 web-optimized photos (max 1600px, JPEG q80) selected and renamed from `source_assets/`
+- `source_assets/` - original photo dumps and concept notes; gitignored, local only
 
-## Sections
+## Deploying
 
-- Hero: "A professionally good time."
-- Story: founded 2018 by friends across tech, finance, music, nightlife, entertainment
-- What We Do: our parties, private events, venue rental, equipment rentals, DJs and talent, catering/bar/staff, travel desk
-- The Trips: masonry photo gallery with lightbox
-- Book Us: contact CTA (placeholder email hello@frienders.co)
+Vercel auto-detects Next.js: import the GitHub repo, accept the defaults, deploy. Every push to `main` redeploys.
 
 ## Open questions for next round
 
 - Case studies vs. the current "field notes" gallery approach
 - Real contact email and any social links
 - Gallery captions are playful placeholders; swap in real trip names/locations if desired
-- Fonts load from Google Fonts (Anton + Inter); self-host them before production if needed

@@ -3,3 +3,17 @@
 
 # Original photo dumps and internal concept notes - local only, not for the public repo
 source_assets/
+
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# Logs
+npm-debug.log*
