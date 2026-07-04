@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frienders — A Professionally Good Time</title>
+<meta name="description" content="Frienders is an experiences company. Parties, private events, venue and equipment rentals, DJs, catering, staff, and in-house travel. NYC and everywhere else.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #101014;
+    --paper: #f4efe6;
+    --sun: #ffb347;
+    --coral: #ff5c47;
+    --sky: #67c6e8;
+    --violet: #b78bff;
+    --max: 1200px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'Inter', -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .display {
+    font-family: 'Anton', Impact, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 0.95;
+    letter-spacing: 0.01em;
+  }
+  img { max-width: 100%; display: block; }
+  a { color: inherit; }
+
+  /* ---------- Nav ---------- */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 18px 28px;
+    background: linear-gradient(to bottom, rgba(16,16,20,0.85), rgba(16,16,20,0));
+    backdrop-filter: blur(2px);
+  }
+  .wordmark {
+    font-family: 'Anton', sans-serif;
+    font-size: 22px; letter-spacing: 0.14em; text-transform: uppercase;
+    text-decoration: none;
+  }
+  .wordmark span { color: var(--sun); }
+  nav .links { display: flex; gap: 26px; }
+  nav .links a {
+    text-decoration: none; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.85;
+  }
+  nav .links a:hover { opacity: 1; color: var(--sun); }
+  @media (max-width: 720px) { nav .links { display: none; } }
+
+  /* ---------- Hero ---------- */
+  header {
+    position: relative; min-height: 100svh;
+    display: flex; align-items: flex-end;
+    isolation: isolate;
+  }
+  header .bg {
+    position: absolute; inset: 0; z-index: -1;
+    background: url('assets/img/hero-hilltop.jpg') center 30% / cover no-repeat;
+  }
+  header .bg::after {
+    content: ''; position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(16,16,20,0.95) 0%, rgba(16,16,20,0.25) 45%, rgba(16,16,20,0.15) 100%);
+  }
+  .hero-inner { width: 100%; max-width: var(--max); margin: 0 auto; padding: 110px 28px 72px; }
+  .hero-inner .kicker, .hero-inner h1 { text-shadow: 0 2px 24px rgba(16,16,20,0.55); }
+  .kicker {
+    font-size: 13px; font-weight: 700; letter-spacing: 0.28em;
+    text-transform: uppercase; color: var(--sun); margin-bottom: 18px;
+  }
+  h1 { font-size: clamp(52px, 9.5vw, 128px); }
+  h1 .accent { color: var(--sun); }
+  .hero-sub {
+    max-width: 560px; margin-top: 22px; font-size: 19px;
+    color: rgba(244,239,230,0.9);
+  }
+  .cta-row { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 15px 30px;
+    font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+    text-decoration: none; border-radius: 999px; transition: transform 0.15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-solid { background: var(--sun); color: var(--ink); }
+  .btn-ghost { border: 1.5px solid rgba(244,239,230,0.55); }
+  .btn-ghost:hover { border-color: var(--paper); }
+
+  /* ---------- Ticker ---------- */
+  .ticker {
+    overflow: hidden; white-space: nowrap;
+    border-top: 1px solid rgba(244,239,230,0.15);
+    border-bottom: 1px solid rgba(244,239,230,0.15);
+    padding: 14px 0; background: var(--ink);
+  }
+  .ticker-track { display: inline-block; animation: scroll 40s linear infinite; }
+  .ticker span {
+    font-family: 'Anton', sans-serif; font-size: 15px; letter-spacing: 0.2em;
+    text-transform: uppercase; margin: 0 24px; opacity: 0.75;
+  }
+  .ticker b { color: var(--sun); font-weight: 400; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+  /* ---------- Sections ---------- */
+  section { padding: 96px 28px; }
+  .wrap { max-width: var(--max); margin: 0 auto; }
+  .section-head { margin-bottom: 48px; }
+  .section-head .kicker { margin-bottom: 12px; }
+  h2 { font-size: clamp(36px, 5.5vw, 68px); }
+  .lede { max-width: 640px; margin-top: 18px; font-size: 18px; color: rgba(244,239,230,0.82); }
+
+  /* ---------- Story ---------- */
+  .story { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center; }
+  .story p { margin-bottom: 18px; color: rgba(244,239,230,0.88); }
+  .story p b { color: var(--sun); font-weight: 600; }
+  .story-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .story-photos img { border-radius: 12px; aspect-ratio: 3/4; object-fit: cover; }
+  .story-photos img:first-child { transform: rotate(-2deg); }
+  .story-photos img:last-child { transform: rotate(2deg) translateY(22px); }
+  @media (max-width: 860px) { .story { grid-template-columns: 1fr; } }
+
+  /* ---------- Services ---------- */
+  #services { background: #17171d; }
+  .svc-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+  }
+  @media (max-width: 980px) { .svc-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .svc-grid { grid-template-columns: 1fr; } }
+  .svc {
+    position: relative; border-radius: 14px; overflow: hidden;
+    aspect-ratio: 4/4.6; display: flex; align-items: flex-end;
+    text-decoration: none; isolation: isolate;
+  }
+  .svc img {
+    position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%;
+    object-fit: cover; transition: transform 0.5s ease;
+  }
+  .svc:hover img { transform: scale(1.05); }
+  .svc::after {
+    content: ''; position: absolute; inset: 0; z-index: 0;
+    background: linear-gradient(to top, rgba(16,16,20,0.92) 8%, rgba(16,16,20,0.05) 55%);
+  }
+  .svc-wide { grid-column: 1 / -1; aspect-ratio: 3/1.1; }
+  @media (max-width: 620px) { .svc-wide { aspect-ratio: 4/4.6; } }
+  .svc-body { position: relative; z-index: 1; padding: 22px; }
+  .svc h3 { font-size: 26px; margin-bottom: 8px; }
+  .svc h3 em { font-style: normal; color: var(--sun); }
+  .svc p { font-size: 14.5px; color: rgba(244,239,230,0.85); line-height: 1.5; }
+
+  /* ---------- Gallery ---------- */
+  .masonry { columns: 3; column-gap: 16px; }
+  @media (max-width: 980px) { .masonry { columns: 2; } }
+  @media (max-width: 560px) { .masonry { columns: 1; } }
+  .shot {
+    position: relative; break-inside: avoid; margin-bottom: 16px;
+    border-radius: 12px; overflow: hidden; cursor: zoom-in;
+  }
+  .shot img { width: 100%; transition: transform 0.5s ease; }
+  .shot:hover img { transform: scale(1.04); }
+  .shot figcaption {
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 28px 16px 12px;
+    background: linear-gradient(to top, rgba(16,16,20,0.85), transparent);
+    font-size: 12.5px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    color: rgba(244,239,230,0.92);
+    opacity: 0; transition: opacity 0.25s ease;
+  }
+  .shot:hover figcaption { opacity: 1; }
+
+  /* ---------- Lightbox ---------- */
+  #lightbox {
+    position: fixed; inset: 0; z-index: 100; display: none;
+    background: rgba(10,10,12,0.94); cursor: zoom-out;
+    align-items: center; justify-content: center; padding: 4vmin;
+  }
+  #lightbox.open { display: flex; }
+  #lightbox img { max-width: 100%; max-height: 92vh; border-radius: 8px; }
+
+  /* ---------- Contact ---------- */
+  #contact {
+    background: linear-gradient(135deg, #2b1a0d 0%, #1a1016 55%, #101014 100%);
+    text-align: center;
+  }
+  #contact h2 { font-size: clamp(40px, 7vw, 92px); }
+  #contact .lede { margin: 20px auto 36px; }
+  .contact-line { margin-top: 28px; font-size: 15px; color: rgba(244,239,230,0.7); }
+  .contact-line a { color: var(--sun); text-decoration: none; }
+
+  footer {
+    padding: 34px 28px; border-top: 1px solid rgba(244,239,230,0.12);
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 12px;
+    font-size: 13px; color: rgba(244,239,230,0.6);
+  }
+  footer .tag { font-style: italic; }
+
+  /* ---------- Reveal ---------- */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="wordmark" href="#top">FRIENDERS<span>.</span></a>
+  <div class="links">
+    <a href="#story">Story</a>
+    <a href="#services">What We Do</a>
+    <a href="#trips">The Trips</a>
+    <a href="#contact">Book Us</a>
+  </div>
+</nav>
+
+<header id="top">
+  <div class="bg"></div>
+  <div class="hero-inner">
+    <p class="kicker">An experiences company. Est. 2018.</p>
+    <h1>A professionally<br><span class="accent">good time.</span></h1>
+    <p class="hero-sub">We throw parties in New York, across the country, and around the world. Then we got so good at it, people started hiring us to throw theirs.</p>
+    <div class="cta-row">
+      <a class="btn btn-solid" href="#contact">Plan something</a>
+      <a class="btn btn-ghost" href="#trips">See the proof</a>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="tickerTrack">
+    <span>Our parties <b>&#9679;</b></span><span>Private events <b>&#9679;</b></span><span>Venue rental <b>&#9679;</b></span><span>Sound &amp; lighting <b>&#9679;</b></span><span>Resident DJs <b>&#9679;</b></span><span>Catering &amp; bar <b>&#9679;</b></span><span>Staffing <b>&#9679;</b></span><span>Travel desk <b>&#9679;</b></span>
+  </div>
+</div>
+
+<section id="story">
+  <div class="wrap story">
+    <div class="reveal">
+      <div class="section-head" style="margin-bottom:28px;">
+        <p class="kicker">The story</p>
+        <h2>Started by friends.<br>Staffed by professionals.<br>Same people.</h2>
+      </div>
+      <p>In 2018, a group of friends from tech, finance, music, nightlife, and entertainment kept ending up in charge of everyone else's fun. The sound system. The boat. The bartender who never showed. Somebody had to handle it, and it kept being us.</p>
+      <p>So we made it official. <b>Frienders</b> is an experiences company. We produce our own parties in NYC, across the US, and internationally. We host private events for people who want theirs handled the same way. And everything we use to do it, from the venue to the speakers to the staff behind the bar, is available to you.</p>
+      <p>The rule from day one has not changed: every event should feel like it was thrown by your most capable friend. Because it was.</p>
+    </div>
+    <div class="story-photos reveal">
+      <img src="assets/img/film-flash.jpg" alt="Friends laughing at a party, shot on film">
+      <img src="assets/img/captain.jpg" alt="Three friends in captain hats at a boat party">
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">What we do</p>
+      <h2>Everything the party needs.<br>Under one roof.</h2>
+      <p class="lede">Book the whole production or just the piece you're missing. Every service below is in-house. No brokers, no markups on markups.</p>
+    </div>
+    <div class="svc-grid">
+      <a class="svc reveal" href="#contact">
+        <img src="assets/img/sail-skyline.jpg" alt="Group on a sailboat in front of the Manhattan skyline">
+        <div class="svc-body">
+          <h3>Our <em>Parties</em></h3>
+          <p>Boats, rooftops, warehouses, beaches. We produce our own events in NYC, across the US, and internationally. Get on the list.</p>
+        </div>
+      </a>
+      <a class="svc reveal" href="#contact">
+        <img src="assets/img/tent-dance.jpg" alt="Guests dancing at a private tented event">
+        <div class="svc-body">
+          <h3>Private <em>Events</em></h3>
+          <p>Birthdays, weddings, corporate offsites, things that defy category. Full production, hosted by us, thrown for you.</p>
+        </div>
+      </a>
+      <a class="svc reveal" href="#contact">
+        <img src="assets/img/venue-hall.jpg" alt="Warm timber event hall with long candlelit tables">
+        <div class="svc-body">
+          <h3>The <em>Venue</em></h3>
+          <p>Our space, your night. A rentable venue with the bones for dinners, showcases, launches, and dance floors.</p>
+        </div>
+      </a>
+      <a class="svc reveal" href="#contact">
+        <img src="assets/img/decks.jpg" alt="Professional DJ decks and turntables">
+        <div class="svc-body">
+          <h3>Equipment <em>Rentals</em></h3>
+          <p>Sound, lighting, decks, subs, and professional speakers. Only the best, delivered and dialed in by people who use it weekly.</p>
+        </div>
+      </a>
+      <a class="svc reveal" href="#contact">
+        <img src="assets/img/dj-red.jpg" alt="DJ performing under red light">
+        <div class="svc-body">
+          <h3>DJs &amp; <em>Talent</em></h3>
+          <p>A roster of staff DJs who read a room and pack a floor. Booked with or without our sound rig.</p>
+        </div>
+      </a>
+      <a class="svc reveal" href="#contact">
+        <img src="assets/img/champagne.jpg" alt="Champagne bottles and cans stacked on ice">
+        <div class="svc-body">
+          <h3>Catering, Bar &amp; <em>Staff</em></h3>
+          <p>Catering for events, bartenders who can pour through a rush, and event staff for hire. Fed, watered, handled.</p>
+        </div>
+      </a>
+      <a class="svc svc-wide reveal" href="#contact">
+        <img src="assets/img/como-boat.jpg" alt="Guest laughing on a speedboat on an alpine lake" style="object-position: center 35%;">
+        <div class="svc-body">
+          <h3>The Travel <em>Desk</em></h3>
+          <p style="max-width: 520px;">In-house travel agents who coordinate flights, transportation, and accommodations for the whole crew. You pick the destination. We move the party there.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="trips">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="kicker">Field notes</p>
+      <h2>The trips.</h2>
+      <p class="lede">A running record of professionally good times. Some of these were our parties. Some were client events. All of them ended too late.</p>
+    </div>
+    <div class="masonry">
+      <figure class="shot reveal"><img src="assets/img/beach-crew.jpg" alt="Group celebrating on a Caribbean beach" loading="lazy"><figcaption>Island chapter</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/dj-blue.jpg" alt="DJ set under blue geometric lights" loading="lazy"><figcaption>Resident at work</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/hill-picnic.jpg" alt="Picnic blankets on a hillside at golden hour" loading="lazy"><figcaption>Upstate, uphill</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/ski-crew.jpg" alt="Crew in ski gear celebrating in deep snow" loading="lazy"><figcaption>First chair, last call</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/sunset-hammock.jpg" alt="Sunset over the water from a hammock on deck" loading="lazy"><figcaption>Golden hour, every hour</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/pool-party.jpg" alt="Pool party with DJ playing under a cabana" loading="lazy"><figcaption>Cabana sessions</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/tuscany-dinner.jpg" alt="Long lunch on a stone terrace with wine" loading="lazy"><figcaption>The long lunch</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/rafting.jpg" alt="Whitewater rafting crew mid-rapid" loading="lazy"><figcaption>Team building, technically</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/rooftop-sunset.jpg" alt="Friends on a rooftop at sunset" loading="lazy"><figcaption>Rooftop rituals</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/disco-selfie.jpg" alt="Sequins and a very good wig" loading="lazy"><figcaption>Dress code enforced</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/boat-girls.jpg" alt="Friends celebrating on a boat in turquoise water" loading="lazy"><figcaption>Open water office</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/winter-sail.jpg" alt="Crew in life vests sailing New York Harbor in winter" loading="lazy"><figcaption>Harbor, off season</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/wings.jpg" alt="Performer with illuminated wings at night" loading="lazy"><figcaption>Production value</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/beach-nyc.jpg" alt="Beach picnic with the city skyline behind" loading="lazy"><figcaption>The city, from the sand</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/photobooth.jpg" alt="Costumed friends in a photo booth" loading="lazy"><figcaption>October, obviously</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/food.jpg" alt="Plated dinner from our catering team" loading="lazy"><figcaption>From the kitchen</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/golden-portrait.jpg" alt="Golden hour portrait wrapped in a blanket" loading="lazy"><figcaption>Sunset uniform</figcaption></figure>
+      <figure class="shot reveal"><img src="assets/img/private-dining.jpg" alt="Candlelit private dining room set for dinner" loading="lazy"><figcaption>Table for whoever shows</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap reveal">
+    <p class="kicker">Book us</p>
+    <h2>Your party called.<br>We picked up.</h2>
+    <p class="lede">Tell us the date, the headcount, and how ambitious we are allowed to be. We will take it from there.</p>
+    <a class="btn btn-solid" href="mailto:hello@frienders.co">hello@frienders.co</a>
+    <p class="contact-line">New York City and wherever the trip goes. <a href="https://frienders.co">frienders.co</a></p>
+  </div>
+</section>
+
+<footer>
+  <div>&copy; 2026 Frienders. Est. 2018.</div>
+  <div class="tag">"Help. We've fallen and must turn up."</div>
+</footer>
+
+<div id="lightbox"><img src="" alt="Expanded photo"></div>
+
+<script>
+  // Duplicate ticker content for a seamless loop
+  const track = document.getElementById('tickerTrack');
+  track.innerHTML += track.innerHTML;
+
+  // Scroll reveal
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Lightbox
+  const lb = document.getElementById('lightbox');
+  const lbImg = lb.querySelector('img');
+  document.querySelectorAll('.shot img').forEach(img => {
+    img.parentElement.addEventListener('click', () => {
+      lbImg.src = img.src;
+      lbImg.alt = img.alt;
+      lb.classList.add('open');
+    });
+  });
+  lb.addEventListener('click', () => lb.classList.remove('open'));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
+</script>
+
+</body>
+</html>

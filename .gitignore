@@ -1,0 +1,5 @@
+# macOS
+.DS_Store
+
+# Original photo dumps and internal concept notes - local only, not for the public repo
+source_assets/
