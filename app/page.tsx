@@ -104,7 +104,7 @@ export default function Home() {
 
       <nav>
         <a className="wordmark" href="#top">
-          FRIENDERS COLLECTIVE<span>.</span>
+          FRIENDERS<span>.</span>COLLECTIVE
         </a>
         <div className="links">
           <a href="#story">Story</a>
