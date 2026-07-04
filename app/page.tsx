@@ -104,7 +104,7 @@ export default function Home() {
 
       <nav>
         <a className="wordmark" href="#top">
-          FRIENDERS<span>.</span>
+          FRIENDERS COLLECTIVE<span>.</span>
         </a>
         <div className="links">
           <a href="#story">Story</a>
@@ -179,7 +179,7 @@ export default function Home() {
               Somebody had to handle it, and it kept being us.
             </p>
             <p>
-              So we made it official. <b>Frienders</b> is an experiences
+              So we made it official. <b>Frienders Collective</b> is an experiences
               company. We produce our own parties in NYC, across the US, and
               internationally. We host private events for people who want
               theirs handled the same way. And everything we use to do it, from
@@ -299,7 +299,7 @@ export default function Home() {
       </section>
 
       <footer>
-        <div>&copy; 2026 Frienders. Est. 2018.</div>
+        <div>&copy; 2026 Frienders Collective. Est. 2018.</div>
         <div className="tag">&quot;Help. We&apos;ve fallen and must turn up.&quot;</div>
       </footer>
     </>

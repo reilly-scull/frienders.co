@@ -1,6 +1,6 @@
 # frienders.co
 
-Marketing site for Frienders, an experiences company est. 2018. Built with Next.js (App Router, TypeScript).
+Marketing site for Frienders Collective, an experiences company est. 2018. Built with Next.js (App Router, TypeScript).
 
 ## Running it
 

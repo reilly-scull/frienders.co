@@ -15,11 +15,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://frienders.co"),
-  title: "Frienders | A Professionally Good Time",
+  title: "Frienders Collective | A Professionally Good Time",
   description:
-    "Frienders is an experiences company. Parties, private events, venue and equipment rentals, DJs, catering, staff, and in-house travel. NYC and everywhere else.",
+    "Frienders Collective is an experiences company. Parties, private events, venue and equipment rentals, DJs, catering, staff, and in-house travel. NYC and everywhere else.",
   openGraph: {
-    title: "Frienders | A Professionally Good Time",
+    title: "Frienders Collective | A Professionally Good Time",
     description:
       "Parties, private events, venue and equipment rentals, DJs, catering, staff, and in-house travel. NYC and everywhere else.",
     images: ["/img/hero-hilltop.jpg"],
