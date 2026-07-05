@@ -9,8 +9,6 @@ export const metadata: Metadata = {
     "Book Frienders Collective for private events, trips, DJs, equipment, catering, and staff in NYC and beyond. A producer replies within one business day. Emergencies: Party911.",
 };
 
-const slots = ["Tue 11:00", "Tue 15:30", "Wed 10:00", "Wed 16:00", "Thu 11:30", "Fri 14:00"];
-
 export default function ContactPage() {
   return (
     <>
@@ -57,16 +55,10 @@ export default function ContactPage() {
             <div className="scheduler">
               <h3>Book a discovery call</h3>
               <p>
-                Twenty minutes with a producer. Scheduling goes live soon; for
-                now, request a slot in the form and we will confirm by email.
+                Twenty minutes with a producer to size up the job. Direct
+                calendar booking goes live shortly; until then, mention your
+                availability in the form and we will send times by email.
               </p>
-              <div className="slot-grid" aria-hidden="true">
-                {slots.map((s, i) => (
-                  <div className={`slot ${i === 1 ? "hot" : ""}`} key={s}>
-                    {s}
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div className="contact-card alert">

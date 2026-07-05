@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function CTABand({
-  title = "Your party called. We picked up.",
+  title = "Let's put a date on it.",
   body = "Tell us the date, the headcount, and how ambitious we are allowed to be. A producer replies within one business day.",
   cta = "Plan something",
   href = "/contact",

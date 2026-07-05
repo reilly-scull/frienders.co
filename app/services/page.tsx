@@ -25,8 +25,8 @@ export default function ServicesPage() {
           </>
         }
         sub="Book the whole production or just the piece you're missing. Every service is in-house. No brokers, no markups on markups."
-        img="/img/boat-dance.jpg"
-        alt="Dancing on a boat deck under colored lights"
+        img="/img/skyline-dusk.jpg"
+        alt="The city skyline under a dramatic dusk sky"
       />
 
       <section>

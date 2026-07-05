@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Frienders Collective is a private event production and experiences company in New York City, founded in 2018 by friends from tech, finance, music, nightlife, and entertainment. No one here is new. Everyone is a pro.",
+  openGraph: { images: ["/img/street-crew.jpg"] },
 };
 
 export default function AboutPage() {

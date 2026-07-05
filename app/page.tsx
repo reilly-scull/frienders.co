@@ -1,18 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import Gallery, { type Shot } from "@/components/Gallery";
-import { services, djs, trips } from "@/lib/content";
+import { services, djs, productions } from "@/lib/content";
 
 const homeShots: Shot[] = [
-  { src: "/img/beach-crew.jpg", alt: "Group celebrating on a Caribbean beach", caption: "Island chapter", width: 1024, height: 768 },
-  { src: "/img/dj-blue.jpg", alt: "DJ set under blue geometric lights", caption: "Resident at work", width: 1050, height: 1400 },
   { src: "/img/hill-picnic.jpg", alt: "Picnic blankets on a hillside at golden hour", caption: "Upstate, uphill", width: 1400, height: 1050 },
   { src: "/img/sunset-hammock.jpg", alt: "Sunset over the water from a hammock on deck", caption: "Golden hour, every hour", width: 1050, height: 1400 },
-  { src: "/img/pool-party.jpg", alt: "Pool party with DJ playing under a cabana", caption: "Cabana sessions", width: 1500, height: 1125 },
   { src: "/img/rooftop-sunset.jpg", alt: "Friends on a rooftop at sunset", caption: "Rooftop rituals", width: 1400, height: 1050 },
   { src: "/img/winter-sail.jpg", alt: "Crew in life vests sailing New York Harbor in winter", caption: "Harbor, off season", width: 1400, height: 1050 },
   { src: "/img/disco-selfie.jpg", alt: "Sequins and a very good wig", caption: "Dress code enforced", width: 1400, height: 1050 },
-  { src: "/img/wings.jpg", alt: "Performer with illuminated wings at night", caption: "Production value", width: 1400, height: 1050 },
+  { src: "/img/beach-nyc.jpg", alt: "Beach picnic with the city skyline behind", caption: "The city, from the sand", width: 1400, height: 1050 },
 ];
 
 const tickerItems = [
@@ -22,7 +19,7 @@ const tickerItems = [
   "Sound & lighting",
   "Resident DJs",
   "Catering & bar",
-  "Staffing",
+  "Party photography",
   "Travel desk",
   "Party911",
 ];
@@ -48,16 +45,15 @@ export default function Home() {
             <span className="accent">good time.</span>
           </h1>
           <p className="hero-sub">
-            We throw parties in New York, across the country, and around the
-            world. Then we got so good at it, people started hiring us to throw
-            theirs.
+            We throw parties in New York and around the world. We got so good
+            at it that people started hiring us to throw theirs.
           </p>
           <div className="cta-row">
             <Link className="btn btn-solid" href="/contact">
               Plan something
             </Link>
-            <Link className="btn btn-ghost" href="/trips">
-              See the proof
+            <Link className="btn btn-ghost" href="/productions">
+              See the productions
             </Link>
           </div>
         </div>
@@ -107,17 +103,17 @@ export default function Home() {
           </div>
           <div className="story-photos reveal">
             <Image
-              src="/img/film-flash.jpg"
-              alt="Friends laughing at a party, shot on film"
-              width={1400}
-              height={928}
+              src="/img/dj-skyline.jpg"
+              alt="Resident DJ on the decks with the Manhattan skyline behind"
+              width={1125}
+              height={1500}
               sizes="(max-width: 860px) 50vw, 25vw"
             />
             <Image
-              src="/img/captain.jpg"
-              alt="Three friends in captain hats at a boat party"
-              width={928}
-              height={1400}
+              src="/img/boat-dance.jpg"
+              alt="Dancing on a boat deck under colored lights"
+              width={1125}
+              height={1500}
               sizes="(max-width: 860px) 50vw, 25vw"
             />
           </div>
@@ -225,19 +221,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section-tint" id="trips">
+      <section className="section-tint" id="productions">
         <div className="wrap">
           <div className="section-head reveal">
-            <p className="kicker">Field notes</p>
-            <h2>The trips.</h2>
+            <p className="kicker">The record</p>
+            <h2>Productions.</h2>
             <p className="lede">
-              {trips.length} chapters and counting: the Hamptons, upstate,
-              Mexico, the Mediterranean, and a few places we agreed not to name.
+              {productions.length} chapters and counting: the Hamptons,
+              upstate, Mexico, the Mediterranean, and a few places we agreed
+              not to name. Our own parties are invite-only; the surest way in
+              is to throw something with us.
             </p>
           </div>
           <Gallery shots={homeShots} />
-          <Link className="section-foot-link reveal" href="/trips">
-            Every trip, in detail
+          <Link className="section-foot-link reveal" href="/productions">
+            Every production, in detail
           </Link>
         </div>
       </section>
@@ -246,9 +244,9 @@ export default function Home() {
         <div className="wrap reveal">
           <p className="kicker">Book us</p>
           <h2>
-            Your party called.
+            Let&apos;s put a date
             <br />
-            We picked up.
+            on it.
           </h2>
           <p className="lede">
             Tell us the date, the headcount, and how ambitious we are allowed

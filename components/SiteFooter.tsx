@@ -27,7 +27,8 @@ export default function SiteFooter() {
           <h4>Company</h4>
           <Link href="/about">About</Link>
           <Link href="/team">Team</Link>
-          <Link href="/trips">The Trips</Link>
+          <Link href="/productions">Productions</Link>
+          <Link href="/pricing">Pricing</Link>
           <Link href="/contact">Book Us</Link>
         </div>
         <div className="foot-col">

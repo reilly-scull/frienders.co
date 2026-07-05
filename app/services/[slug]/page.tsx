@@ -92,6 +92,15 @@ export default async function ServicePage({
           {svc.intro.map((p) => (
             <p key={p.slice(0, 24)}>{p}</p>
           ))}
+          {svc.pricing && (
+            <div className="price-tag">
+              <span className="price-label">{svc.pricing.label}</span>
+              <span className="price-from">
+                from <b>{svc.pricing.from}</b>
+              </span>
+              <span className="price-note">{svc.pricing.note}</span>
+            </div>
+          )}
         </div>
       </section>
 
@@ -199,7 +208,7 @@ export default async function ServicePage({
             <p className="kicker" style={{ color: "var(--coral)" }}>
               In a jam right now?
             </p>
-            <h2>Sound the alarm.</h2>
+            <h2>{svc.cta.title}</h2>
             <p className="lede">
               Email{" "}
               <a href="mailto:911@frienders.co" style={{ color: "var(--coral)" }}>
@@ -209,15 +218,12 @@ export default async function ServicePage({
               timeline. We triage fastest before 6pm.
             </p>
             <Link className="btn btn-alert" href="/contact">
-              Get help today
+              {svc.cta.button}
             </Link>
           </div>
         </section>
       ) : (
-        <CTABand
-          title={`Add ${svc.name.toLowerCase()} to your event.`}
-          body="Tell us the date, the headcount, and what you have in mind. A producer replies within one business day."
-        />
+        <CTABand title={svc.cta.title} body={svc.cta.body} cta={svc.cta.button} />
       )}
     </div>
   );

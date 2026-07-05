@@ -3,7 +3,7 @@ import { services } from "@/lib/content";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://frienders.co";
-  const staticPages = ["", "/about", "/team", "/services", "/trips", "/contact"];
+  const staticPages = ["", "/about", "/team", "/services", "/productions", "/pricing", "/contact"];
   return [
     ...staticPages.map((p) => ({
       url: `${base}${p}`,
