@@ -13,13 +13,18 @@ Then open <http://localhost:3000>. There is also a `.claude/launch.json` config 
 
 ## Structure
 
-- `app/layout.tsx` - root layout, metadata, and self-hosted fonts (Anton + Inter via next/font)
-- `app/page.tsx` - the one-page site: nav, hero, ticker, story, services, gallery, contact, footer
+- `app/layout.tsx` - root layout, shared nav/footer, metadata, Organization schema, self-hosted fonts
+- `app/page.tsx` - home
+- `app/about`, `app/team`, `app/trips`, `app/contact` - static pages
+- `app/services/page.tsx` + `app/services/[slug]/page.tsx` - services landing and 7 detail pages driven by `lib/content.ts` (private-events, venues, equipment, djs, catering, travel, party911)
+- `app/sitemap.ts`, `app/robots.ts` - SEO
+- `lib/content.ts` - all copy/data: services, trips, DJ roster, team
+- `components/` - SiteNav (mobile menu), SiteFooter, PageHero, CTABand, Gallery (lightbox), ContactForm, Effects
 - `app/globals.css` - all styles
-- `components/Gallery.tsx` - masonry photo grid with lightbox (client component)
-- `components/Effects.tsx` - scroll-reveal observer (client component)
-- `public/img/` - 28 web-optimized photos (max 1600px, JPEG q80) selected and renamed from `source_assets/`
+- `public/img/` - 59 web-optimized photos selected and renamed from `source_assets/`
 - `source_assets/` - original photo dumps and concept notes; gitignored, local only
+
+The contact form and scheduler are visual placeholders; nothing sends yet (see TODO in `components/ContactForm.tsx`).
 
 ## Deploying
 

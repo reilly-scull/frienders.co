@@ -1,0 +1,338 @@
+export type Img = { src: string; alt: string; width: number; height: number };
+
+export type Service = {
+  slug: string;
+  name: string;
+  short: string;
+  card: string;
+  cardImg: string;
+  cardAlt: string;
+  kicker: string;
+  heroImg: string;
+  heroAlt: string;
+  intro: string[];
+  features?: { title: string; body: string }[];
+  specs?: { heading: string; items: string[] }[];
+  gallery?: Img[];
+  faq?: { q: string; a: string }[];
+  theme?: "default" | "alert";
+  seoTitle: string;
+  seoDescription: string;
+};
+
+export const services: Service[] = [
+  {
+    slug: "private-events",
+    name: "Private Events",
+    short: "Full event production",
+    card: "Birthdays, weddings, corporate offsites, things that defy category. Full production, hosted by us, thrown for you.",
+    cardImg: "/img/tent-dance.jpg",
+    cardAlt: "Guests dancing at a private tented event",
+    kicker: "Full production",
+    heroImg: "/img/tent-dance.jpg",
+    heroAlt: "Guests dancing under string lights at a private tented event",
+    intro: [
+      "You bring the occasion and the guest list. We bring everything else: the venue, the sound, the lights, the music, the bar, the food, and the people who make it all run.",
+      "We work best with groups under 150 who care about production value. Every event gets a dedicated producer, a run-of-show, and a crew that has done this a hundred times and still loves it.",
+    ],
+    features: [
+      { title: "Design and production", body: "Concept, decor, lighting design, floor plans, timelines. We handle vendors, permits, and load-in so you never see a clipboard." },
+      { title: "Music, handled", body: "Resident DJs matched to your room, backed by our own Electro-Voice and QSC rigs. No wedding-band roulette." },
+      { title: "Bar, kitchen, and floor", body: "Bartenders who can pour through a rush, catering through our partners at Curated Kitchen, and staff who read a room." },
+      { title: "The morning after", body: "Strike, cleanup, lost-and-found, recovery services. The venue looks like nothing happened. You will know better." },
+    ],
+    gallery: [
+      { src: "/img/formal-fountain.jpg", alt: "Dressed-up group gathered at a city fountain", width: 1500, height: 1125 },
+      { src: "/img/dinner-toast.jpg", alt: "Friends toasting at a long dinner table", width: 1500, height: 1125 },
+      { src: "/img/bar-blooms.jpg", alt: "Celebration under a ceiling of flowers", width: 1500, height: 1125 },
+    ],
+    seoTitle: "Private Event Production in NYC",
+    seoDescription: "Full-service private event production in New York City for groups under 150: venues, DJs, sound, lighting, catering, bar, and staff. One team, one producer, zero clipboards.",
+  },
+  {
+    slug: "venues",
+    name: "Venues",
+    short: "Partner spaces across NYC",
+    card: "Partner venues across the city: an East Village ground floor, a Williamsburg bar, a Gowanus hi-fi listening bar.",
+    cardImg: "/img/venue-hall.jpg",
+    cardAlt: "Warm timber event hall with long candlelit tables",
+    kicker: "Spaces we know cold",
+    heroImg: "/img/lounge-neon.jpg",
+    heroAlt: "Moody lounge interior with warm neon light",
+    intro: [
+      "We book events into a short list of partner venues we know cold: the sightlines, the sound limits, the neighbors, the good corners. You get a space that already works, with a production team the room already trusts.",
+      "Every venue booking can come with as much or as little of the rest of our stack as you want: sound, lighting, DJs, bar, catering, and staff.",
+    ],
+    specs: [
+      { heading: "East Village", items: ["1,500 square feet, ground floor", "Flexible layout for dinners, launches, and dance floors", "Groups up to 120"] },
+      { heading: "Williamsburg", items: ["Full-service bar with staff who know a party", "Buyouts and partial takeovers", "Steps from the Bedford stop"] },
+      { heading: "Gowanus", items: ["Hi-fi listening bar with an audiophile-grade system", "Intimate rooms for 20 to 80", "Made for people who care what it sounds like"] },
+    ],
+    gallery: [
+      { src: "/img/venue-hall.jpg", alt: "Warm timber event hall with long candlelit tables", width: 1600, height: 1200 },
+      { src: "/img/bar-blooms.jpg", alt: "Bar interior under a ceiling of flowers", width: 1500, height: 1125 },
+      { src: "/img/cheers-neon.jpg", alt: "Cocktail cheers in neon light", width: 1125, height: 1500 },
+    ],
+    seoTitle: "Event Venues in NYC: East Village, Williamsburg, Gowanus",
+    seoDescription: "Book partner event venues in Manhattan and Brooklyn through Frienders Collective: a 1,500 sq ft East Village ground floor, a Williamsburg bar, and a Gowanus hi-fi listening bar.",
+  },
+  {
+    slug: "equipment",
+    name: "Equipment Rentals",
+    short: "Sound, DJ gear, lighting",
+    card: "Electro-Voice and QSC sound, Sennheiser mics, AlphaTheta and Pioneer DJ gear, and lighting packages. Delivered and dialed in.",
+    cardImg: "/img/decks.jpg",
+    cardAlt: "Professional DJ decks and turntables",
+    kicker: "Pro gear, dialed in",
+    heroImg: "/img/decks.jpg",
+    heroAlt: "Professional DJ decks, mixer, and turntables ready for a set",
+    intro: [
+      "The same rigs we run at our own parties, available for yours. Everything arrives tested, gets set up and tuned by people who use it weekly, and gets picked up when the party is over.",
+      "Rent a single speaker or a full production. Delivery across NYC, and further by arrangement.",
+    ],
+    specs: [
+      { heading: "Sound", items: ["Electro-Voice and QSC loudspeakers, 400 to 1,000 watts per channel", "Subwoofers, stands, and cabling included", "Systems sized to your room, from dinner-party warm to full dance floor"] },
+      { heading: "Microphones and monitoring", items: ["Sennheiser microphones, wired and wireless", "Sennheiser headphones and accessories", "Speeches, toasts, live sets, panels"] },
+      { heading: "DJ equipment", items: ["AlphaTheta / Pioneer DJ players and mixers", "Club-standard layouts your DJ already knows", "Booth monitors and laptop stands on request"] },
+      { heading: "Lighting packages", items: ["Basic: clean, warm, and flattering", "Ambiance: color washes, uplights, and texture", "Dance: moving heads, beams, and haze. The full permission slip"] },
+    ],
+    gallery: [
+      { src: "/img/boat-dj.jpg", alt: "DJ playing on deck of a boat with headphones", width: 1125, height: 1500 },
+      { src: "/img/dj-booth.jpg", alt: "DJ booth under blue geometric light", width: 1125, height: 1500 },
+      { src: "/img/club-film.jpg", alt: "DJ in a dark club, shot on film", width: 1500, height: 995 },
+    ],
+    seoTitle: "DJ and Sound Equipment Rental in NYC and Brooklyn",
+    seoDescription: "Rent Electro-Voice and QSC PA systems (400-1,000 WPC), Sennheiser microphones, AlphaTheta / Pioneer DJ gear, and lighting packages in NYC. Delivered, set up, and tuned.",
+  },
+  {
+    slug: "djs",
+    name: "Resident DJs",
+    short: "The roster",
+    card: "Six residents who read a room and pack a floor. Booked with or without our sound rigs.",
+    cardImg: "/img/dj-red.jpg",
+    cardAlt: "DJ performing under red light",
+    kicker: "The roster",
+    heroImg: "/img/dj-red.jpg",
+    heroAlt: "Resident DJ performing under deep red light",
+    intro: [
+      "Our residents grew up in Brooklyn warehouses, dust-covered playa stages, and boat decks in three time zones. They read rooms, not just requests.",
+      "Every booking includes an advance conversation about your crowd and your arc for the night. Pair any resident with our sound and lighting rigs for a turnkey dance floor.",
+    ],
+    seoTitle: "Book Resident DJs in NYC",
+    seoDescription: "Book Frienders Collective resident DJs for private events in NYC and beyond: G.Thomas, Lina Grace, jacqsmiley, Getyn Afteret, Dario Dee, and Sasta.",
+  },
+  {
+    slug: "catering",
+    name: "Catering, Bar & Staff",
+    short: "Fed, watered, handled",
+    card: "Catering with our partners at Curated Kitchen, bartenders who can pour through a rush, and event staff for hire.",
+    cardImg: "/img/champagne.jpg",
+    cardAlt: "Champagne bottles and cans stacked on ice",
+    kicker: "Fed, watered, handled",
+    heroImg: "/img/brunch-table.jpg",
+    heroAlt: "Friends gathered around a loaded brunch table",
+    intro: [
+      "Food and drink are half the memory of a night. We run catering through our partners at Curated Kitchen, staff the bar with people who can pour through a rush, and place floor staff who make everything feel effortless.",
+      "From passed bites for 20 to a plated dinner for 120, with bar programs to match.",
+    ],
+    features: [
+      { title: "Catering packages", body: "Menus built with Curated Kitchen around your event: family style, plated, stations, or late-night revival food. Dietary needs handled without drama." },
+      { title: "Bar programs", body: "Full bar builds, batched cocktails, champagne moments, and zero-proof options that are not an afterthought." },
+      { title: "Staff for hire", body: "Bartenders, servers, coat check, door, and production hands. Insured, experienced, and actually pleasant." },
+    ],
+    gallery: [
+      { src: "/img/food-cauliflower.jpg", alt: "Roasted cauliflower dish plated for service", width: 1125, height: 1500 },
+      { src: "/img/limes.jpg", alt: "Fresh-cut limes on a board behind the bar", width: 1500, height: 1125 },
+      { src: "/img/dinner-bw.jpg", alt: "Dinner party in black and white", width: 1500, height: 844 },
+      { src: "/img/drink-flight.jpg", alt: "Colorful cocktail flight with citrus", width: 1125, height: 1500 },
+    ],
+    seoTitle: "Event Catering, Bartenders, and Staff in NYC",
+    seoDescription: "Event catering with Curated Kitchen, bar programs, bartenders, and event staff for hire in New York City. Passed bites for 20 to plated dinners for 120.",
+  },
+  {
+    slug: "travel",
+    name: "The Travel Desk",
+    short: "We move the party",
+    card: "In-house travel agents who move the whole crew: flights, villas, boats, and ground transport. You pick the destination.",
+    cardImg: "/img/como-boat.jpg",
+    cardAlt: "Guest laughing on a speedboat on an alpine lake",
+    kicker: "We move the party",
+    heroImg: "/img/sail-liberty.jpg",
+    heroAlt: "Sailing past the Statue of Liberty at golden hour",
+    intro: [
+      "Hira runs our in-house travel desk: flights, villas, boats, drivers, and the thousand small logistics that make a group trip feel easy. You pick the destination, we move the party there.",
+      "Travel pairs with everything else we do. Book the trip, then add DJs, sound, catering, and production on the ground. See the trips page for what that looks like in practice.",
+    ],
+    features: [
+      { title: "Group flights and transfers", body: "One itinerary for 6 to 20 people, with contingency plans for the friend who always misses the flight." },
+      { title: "Villas, farmhouses, beach houses", body: "Sourced, vetted, and walked before you arrive. Enough bedrooms, the right kitchen, and neighbors at a safe distance." },
+      { title: "On-the-ground production", body: "Off-grid sound systems, local staff, chefs, boats, and backup generators. The playa taught us self-reliance." },
+    ],
+    gallery: [
+      { src: "/img/boat-laugh.jpg", alt: "Guest laughing on a boat on Lake Como", width: 1000, height: 1500 },
+      { src: "/img/sunset-sail.jpg", alt: "Couple on a sailboat at sunset", width: 1500, height: 1125 },
+      { src: "/img/beach-selfie.jpg", alt: "Group selfie on a warm-water beach", width: 1500, height: 1125 },
+    ],
+    seoTitle: "Group Trip Planning and Travel Desk",
+    seoDescription: "In-house travel agents for group trips of 6 to 20: flights, villas, sailing charters, and on-the-ground event production in the Hamptons, Caribbean, Mexico, and the Mediterranean.",
+  },
+  {
+    slug: "party911",
+    name: "Party911",
+    short: "Last-minute rescue",
+    card: "Day-of cancellations, no-show vendors, unexpected disasters. A limited menu at premium prices, when you are out of options.",
+    cardImg: "/img/suit-bus.jpg",
+    cardAlt: "Guest in a suit mid-celebration on a party bus",
+    kicker: "Emergency party support",
+    heroImg: "/img/suit-bus.jpg",
+    heroAlt: "Guest in a suit celebrating chaotically on a party bus",
+    intro: [
+      "The DJ cancelled at 3pm. The caterer stopped answering. The venue flooded. Whatever just happened, Party911 is our rapid-response line for events in trouble today.",
+      "This is a limited menu at premium prices. We will be honest about what is possible on the clock you have. But if you are in a jam, we can help you get out of it.",
+    ],
+    features: [
+      { title: "Emergency DJ and sound", body: "A resident DJ with a full rig, dispatched same-day across NYC. Music by the time your guests arrive." },
+      { title: "Emergency bar and staff", body: "Bartenders, servers, and door staff on short notice. Ice, mixers, and glassware if the order never showed." },
+      { title: "Venue rescue", body: "If your space falls through, we work our partner venues and network to re-home the night. No promises, strong odds." },
+      { title: "Care packages", body: "The essentials, stocked and delivered: drinks, mixers, munchies, and the things everyone forgot." },
+    ],
+    faq: [
+      { q: "How fast can you actually get here?", a: "Within NYC, a DJ with a rig can typically be playing within 3 to 4 hours of a confirmed booking. Bar and staff bookings are usually faster. Outside the city, call and we will be straight with you." },
+      { q: "Why is it more expensive than booking ahead?", a: "Same-day dispatch means paying our people premium rates to drop everything, plus expedited transport and gear prep. You are buying certainty on a day that has none." },
+      { q: "What if my event is tomorrow, not today?", a: "Still call. Anything with more than 24 hours of runway books at closer-to-normal rates, and you get more menu to choose from." },
+      { q: "What can you not fix?", a: "Weather, heartbreak, and guest lists. Almost everything else has a workaround." },
+    ],
+    theme: "alert",
+    seoTitle: "Party911: Last-Minute Party Rescue in NYC",
+    seoDescription: "Emergency event support in New York City: same-day DJs with sound, bartenders and staff, venue rescue, and care packages. Day-of cancellations and disasters, handled. Premium prices, real answers.",
+  },
+];
+
+export const djs = [
+  { name: "G.Thomas", url: "https://soundcloud.com/gthomasny", blurb: "Deep, chugging house for long nights that refuse to end." },
+  { name: "Lina Grace", url: "https://soundcloud.com/lina-grace-deforca", blurb: "Melodic and hypnotic, built for sunsets and open air." },
+  { name: "jacqsmiley", url: "https://soundcloud.com/jacqsmiley", blurb: "Disco, edits, and joy. The dance floor's best friend." },
+  { name: "Getyn Afteret", url: "https://soundcloud.com/kyle-stoddard-948502533", blurb: "Peak-hour energy with a wink. Yes, that is the name." },
+  { name: "Dario Dee", url: "https://soundcloud.com/dariodee_music", blurb: "Groove-first house with teeth, from warmup to close." },
+  { name: "Sasta", url: "https://soundcloud.com/sastamusic", blurb: "Textured, worldly, and warm. Sets that tell a story." },
+];
+
+export type Trip = {
+  slug: string;
+  name: string;
+  stats: string;
+  body: string;
+  img: Img;
+};
+
+export const trips: Trip[] = [
+  {
+    slug: "summers-end-full-send",
+    name: "Summer's End Full Send",
+    stats: "15 people. 4 days. Hamptons farmhouse.",
+    body: "The season's closing argument. Three DJs rotating across four days, 2,000 watts of sound in a barn that could take it, fireworks over the field, glow-in-the-dark lawn games after midnight, and full catering so nobody had to leave the property. Summer ended. We made sure it noticed.",
+    img: { src: "/img/pool-party.jpg", alt: "Pool party with a DJ playing under a cabana", width: 1500, height: 1125 },
+  },
+  {
+    slug: "gold-party",
+    name: "The Gold Party",
+    stats: "20 people. Upstate New York. Dress code: gold.",
+    body: "Twenty people in a house upstate, every one of them in gold. Costumes, floor-to-ceiling decorations, three DJs, and a massage table running all weekend because recovery is part of the program. The photos look like a fever dream. They are accurate.",
+    img: { src: "/img/wings.jpg", alt: "Performer in glowing gold illuminated wings at night", width: 1400, height: 1050 },
+  },
+  {
+    slug: "south-carolina",
+    name: "South Carolina",
+    stats: "15 people. 5 days. Barrier-island beach house.",
+    body: "Five days on a barrier island with a house full of friends and a schedule with exactly one item on it: the tide. Long beach days, longer dinners, and the kind of quiet that makes the loud parts feel earned.",
+    img: { src: "/img/beach-towels.jpg", alt: "Friends lined up on beach towels on white sand", width: 1500, height: 1125 },
+  },
+  {
+    slug: "mexico",
+    name: "Mexico",
+    stats: "12 people. 3 days. Festival and after-parties.",
+    body: "Twelve people, three days, one music festival, and a pair of villas close enough to walk home from bad decisions. Festival days, villa after-parties, and a travel desk that had every transfer, ticket, and taco spot handled before wheels-down.",
+    img: { src: "/img/beach-crew.jpg", alt: "Group celebrating on a beach in Mexico", width: 1024, height: 768 },
+  },
+  {
+    slug: "sailing",
+    name: "Sailing Trips",
+    stats: "6 to 20 people. NYC, Caribbean, Mediterranean.",
+    body: "Day outings in New York Harbor and week-long charters in the Caribbean and Mediterranean. Deserted islands, beach towns, seaside restaurants, beach parties, and an off-grid sound system that turns any anchorage into a venue. The captain knows. The captain has always known.",
+    img: { src: "/img/sail-liberty.jpg", alt: "Sailing past the Statue of Liberty at golden hour", width: 1125, height: 1500 },
+  },
+  {
+    slug: "vermont-ski",
+    name: "Vermont Ski Trip",
+    stats: "Big house. Big mountain. Bigger fireplace.",
+    body: "First chair to last call. A big house at the base, s'mores and fire pits when the lifts close, hot chocolate with options, a catered dinner worth coming in early for, and an after-party that made the hot tub a load-bearing amenity.",
+    img: { src: "/img/ski-crew.jpg", alt: "Crew in ski gear celebrating in deep snow", width: 1118, height: 806 },
+  },
+  {
+    slug: "desert-adventures",
+    name: "Desert Adventures",
+    stats: "5 people. 1 week. Boulder to Joshua Tree.",
+    body: "Five people, one week, and a route that read like a dare: parties in Boulder and Joshua Tree with pit stops across Utah and Nevada. Red rocks, empty highways, borrowed dance floors, and a sound system that never once got to rest.",
+    img: { src: "/img/golden-portrait.jpg", alt: "Golden hour portrait in the desert light", width: 1400, height: 1050 },
+  },
+  {
+    slug: "halloween",
+    name: "Halloween",
+    stats: "Many editions. Many locations. Zero restraint.",
+    body: "Our high holiday. Warehouses, brownstones, barns, and bars, each year a different city block and a different fever. Costumes are mandatory, effort is noticed, and the photo booth evidence is permanent.",
+    img: { src: "/img/photobooth.jpg", alt: "Costumed friends in a photo booth on Halloween", width: 1400, height: 933 },
+  },
+  {
+    slug: "beach-parties",
+    name: "Beach Parties",
+    stats: "Rockaways to the islands. Sound included.",
+    body: "Speakers in the sand, a parachute for shade, coolers with a plan, and the city skyline keeping watch. Our beach parties run from Rockaway day trips to full weekends on warmer water.",
+    img: { src: "/img/beach-nyc.jpg", alt: "Beach picnic with the New York City skyline behind", width: 1400, height: 1050 },
+  },
+  {
+    slug: "woodland",
+    name: "Woodland",
+    stats: "Deep woods. Off grid. On purpose.",
+    body: "A house at the end of a road that stops being a road. Firelight, forest air, a sound system running off our own power, and nights that go exactly as long as they want to. What happens in the woods stays pleasantly unverifiable.",
+    img: { src: "/img/woodland-dusk.jpg", alt: "Lake house glowing at dusk in the woods", width: 1125, height: 1500 },
+  },
+  {
+    slug: "petes-birthdays",
+    name: "Pete's Birthdays at Public Records",
+    stats: "Private takeover. World-class sound.",
+    body: "Every year, Pete's birthday takes over Public Records: a private takeover of one of the best-sounding rooms in New York. Our nightlife connections handle the room and the staff, our residents handle the music, and Pete handles being the birthday boy. Rinse, repeat, annually.",
+    img: { src: "/img/club-film.jpg", alt: "DJ in a dark club, shot on film", width: 1500, height: 995 },
+  },
+  {
+    slug: "valentines",
+    name: "An Intimate Valentine's",
+    stats: "12 people. 3 days of prep. 100 candles.",
+    body: "Three days of prep for one dinner: rose petals everywhere, a hundred candles, rose prosecco on arrival, roast tomato soup, osso buco alla milanese, and a Barolo that deserved its own place setting. Proof that production value works at twelve covers, too.",
+    img: { src: "/img/private-dining.jpg", alt: "Candlelit private dining room set for a Valentine's dinner", width: 1400, height: 934 },
+  },
+];
+
+export const leadership = [
+  { name: "Samantha", role: "Chief Executive Officer" },
+  { name: "Kathryn Lewis", role: "Chief Operating Officer" },
+  { name: "Reilly", role: "Chief Technology Officer, Chairman of the Board" },
+  { name: "Olga", role: "Chief Financial Officer" },
+  { name: "Wendy", role: "Chief of Staff" },
+  { name: "Alain", role: "General Counsel" },
+  { name: "Dianna", role: "Chief Medical Officer" },
+];
+
+export const directors = [
+  { name: "Maria", role: "Director, Catering" },
+  { name: "Hira", role: "Director, Travel" },
+  { name: "Lina", role: "Director, Marketing & Communications" },
+  { name: "Greg", role: "Director, People & Chancellor of Sass" },
+  { name: "Kyle", role: "Director, Supply Chain Engineering" },
+  { name: "Halima", role: "Director, Recovery Services" },
+];
+
+export const support = [
+  { name: "Kelsea", role: "Client Experience" },
+  { name: "Derek", role: "Strategic Partnerships" },
+  { name: "Yashar", role: "Production Support" },
+];

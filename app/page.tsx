@@ -1,120 +1,36 @@
 import Image from "next/image";
-import Effects from "@/components/Effects";
+import Link from "next/link";
 import Gallery, { type Shot } from "@/components/Gallery";
+import { services, djs, trips } from "@/lib/content";
 
-const services = [
-  {
-    title: (
-      <>
-        Our <em>Parties</em>
-      </>
-    ),
-    body: "Boats, rooftops, warehouses, beaches. We produce our own events in NYC, across the US, and internationally. Get on the list.",
-    img: "/img/sail-skyline.jpg",
-    alt: "Group on a sailboat in front of the Manhattan skyline",
-  },
-  {
-    title: (
-      <>
-        Private <em>Events</em>
-      </>
-    ),
-    body: "Birthdays, weddings, corporate offsites, things that defy category. Full production, hosted by us, thrown for you.",
-    img: "/img/tent-dance.jpg",
-    alt: "Guests dancing at a private tented event",
-  },
-  {
-    title: (
-      <>
-        The <em>Venue</em>
-      </>
-    ),
-    body: "Our space, your night. A rentable venue with the bones for dinners, showcases, launches, and dance floors.",
-    img: "/img/venue-hall.jpg",
-    alt: "Warm timber event hall with long candlelit tables",
-  },
-  {
-    title: (
-      <>
-        Equipment <em>Rentals</em>
-      </>
-    ),
-    body: "Sound, lighting, decks, subs, and professional speakers. Only the best, delivered and dialed in by people who use it weekly.",
-    img: "/img/decks.jpg",
-    alt: "Professional DJ decks and turntables",
-  },
-  {
-    title: (
-      <>
-        DJs &amp; <em>Talent</em>
-      </>
-    ),
-    body: "A roster of staff DJs who read a room and pack a floor. Booked with or without our sound rig.",
-    img: "/img/dj-red.jpg",
-    alt: "DJ performing under red light",
-  },
-  {
-    title: (
-      <>
-        Catering, Bar &amp; <em>Staff</em>
-      </>
-    ),
-    body: "Catering for events, bartenders who can pour through a rush, and event staff for hire. Fed, watered, handled.",
-    img: "/img/champagne.jpg",
-    alt: "Champagne bottles and cans stacked on ice",
-  },
-];
-
-const shots: Shot[] = [
+const homeShots: Shot[] = [
   { src: "/img/beach-crew.jpg", alt: "Group celebrating on a Caribbean beach", caption: "Island chapter", width: 1024, height: 768 },
   { src: "/img/dj-blue.jpg", alt: "DJ set under blue geometric lights", caption: "Resident at work", width: 1050, height: 1400 },
   { src: "/img/hill-picnic.jpg", alt: "Picnic blankets on a hillside at golden hour", caption: "Upstate, uphill", width: 1400, height: 1050 },
-  { src: "/img/ski-crew.jpg", alt: "Crew in ski gear celebrating in deep snow", caption: "First chair, last call", width: 1118, height: 806 },
   { src: "/img/sunset-hammock.jpg", alt: "Sunset over the water from a hammock on deck", caption: "Golden hour, every hour", width: 1050, height: 1400 },
   { src: "/img/pool-party.jpg", alt: "Pool party with DJ playing under a cabana", caption: "Cabana sessions", width: 1500, height: 1125 },
-  { src: "/img/tuscany-dinner.jpg", alt: "Long lunch on a stone terrace with wine", caption: "The long lunch", width: 1050, height: 1400 },
-  { src: "/img/rafting.jpg", alt: "Whitewater rafting crew mid-rapid", caption: "Team building, technically", width: 1284, height: 943 },
   { src: "/img/rooftop-sunset.jpg", alt: "Friends on a rooftop at sunset", caption: "Rooftop rituals", width: 1400, height: 1050 },
-  { src: "/img/disco-selfie.jpg", alt: "Sequins and a very good wig", caption: "Dress code enforced", width: 1400, height: 1050 },
-  { src: "/img/boat-girls.jpg", alt: "Friends celebrating on a boat in turquoise water", caption: "Open water office", width: 1400, height: 1049 },
   { src: "/img/winter-sail.jpg", alt: "Crew in life vests sailing New York Harbor in winter", caption: "Harbor, off season", width: 1400, height: 1050 },
+  { src: "/img/disco-selfie.jpg", alt: "Sequins and a very good wig", caption: "Dress code enforced", width: 1400, height: 1050 },
   { src: "/img/wings.jpg", alt: "Performer with illuminated wings at night", caption: "Production value", width: 1400, height: 1050 },
-  { src: "/img/beach-nyc.jpg", alt: "Beach picnic with the city skyline behind", caption: "The city, from the sand", width: 1400, height: 1050 },
-  { src: "/img/photobooth.jpg", alt: "Costumed friends in a photo booth", caption: "October, obviously", width: 1400, height: 933 },
-  { src: "/img/food.jpg", alt: "Plated dinner from our catering team", caption: "From the kitchen", width: 1400, height: 1050 },
-  { src: "/img/golden-portrait.jpg", alt: "Golden hour portrait wrapped in a blanket", caption: "Sunset uniform", width: 1400, height: 1050 },
-  { src: "/img/private-dining.jpg", alt: "Candlelit private dining room set for dinner", caption: "Table for whoever shows", width: 1400, height: 934 },
 ];
 
 const tickerItems = [
   "Our parties",
   "Private events",
-  "Venue rental",
+  "Venues",
   "Sound & lighting",
   "Resident DJs",
   "Catering & bar",
   "Staffing",
   "Travel desk",
+  "Party911",
 ];
 
 export default function Home() {
   return (
     <>
-      <Effects />
-
-      <nav>
-        <a className="wordmark" href="#top">
-          FRIENDERS<span>.</span>COLLECTIVE
-        </a>
-        <div className="links">
-          <a href="#story">Story</a>
-          <a href="#services">What We Do</a>
-          <a href="#trips">The Trips</a>
-          <a href="#contact">Book Us</a>
-        </div>
-      </nav>
-
-      <header id="top">
+      <header className="home-hero" id="top">
         <div className="bg">
           <Image
             src="/img/hero-hilltop.jpg"
@@ -137,12 +53,12 @@ export default function Home() {
             theirs.
           </p>
           <div className="cta-row">
-            <a className="btn btn-solid" href="#contact">
+            <Link className="btn btn-solid" href="/contact">
               Plan something
-            </a>
-            <a className="btn btn-ghost" href="#trips">
+            </Link>
+            <Link className="btn btn-ghost" href="/trips">
               See the proof
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -161,7 +77,7 @@ export default function Home() {
 
       <section id="story">
         <div className="wrap story">
-          <div className="reveal">
+          <div className="reveal prose">
             <div className="section-head" style={{ marginBottom: 28 }}>
               <p className="kicker">The story</p>
               <h2>
@@ -173,23 +89,21 @@ export default function Home() {
               </h2>
             </div>
             <p>
-              In 2018, a group of friends from tech, finance, music, nightlife,
-              and entertainment kept ending up in charge of everyone else&apos;s
-              fun. The sound system. The boat. The bartender who never showed.
-              Somebody had to handle it, and it kept being us.
+              <b>Frienders Collective</b> is a private event production and
+              experiences company in New York City, founded in 2018,
+              specializing in groups under 150. We produce our own parties in
+              NYC, across the US, and internationally, and we bring the same
+              stack to private events: venues, sound, resident DJs, catering,
+              staff, and an in-house travel desk.
             </p>
             <p>
-              So we made it official. <b>Frienders Collective</b> is an experiences
-              company. We produce our own parties in NYC, across the US, and
-              internationally. We host private events for people who want
-              theirs handled the same way. And everything we use to do it, from
-              the venue to the speakers to the staff behind the bar, is
-              available to you.
+              Our crew came up through Brooklyn warehouses, boat decks, and the
+              Burning Man scene of professional partygoers. No one here is new.
+              Everyone is a pro. That is the whole hiring policy.
             </p>
-            <p>
-              The rule from day one has not changed: every event should feel
-              like it was thrown by your most capable friend. Because it was.
-            </p>
+            <Link className="section-foot-link" href="/about">
+              Read the full story
+            </Link>
           </div>
           <div className="story-photos reveal">
             <Image
@@ -210,7 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="services">
+      <section className="section-tint" id="services">
         <div className="wrap">
           <div className="section-head reveal">
             <p className="kicker">What we do</p>
@@ -221,62 +135,114 @@ export default function Home() {
             </h2>
             <p className="lede">
               Book the whole production or just the piece you&apos;re missing.
-              Every service below is in-house. No brokers, no markups on
-              markups.
+              One crew, one budget, one text thread.
             </p>
           </div>
           <div className="svc-grid">
-            {services.map((svc) => (
-              <a className="svc reveal" href="#contact" key={svc.img}>
-                <Image
-                  src={svc.img}
-                  alt={svc.alt}
-                  fill
-                  sizes="(max-width: 620px) 100vw, (max-width: 980px) 50vw, 33vw"
-                />
-                <div className="svc-body">
-                  <h3>{svc.title}</h3>
-                  <p>{svc.body}</p>
-                </div>
-              </a>
-            ))}
-            <a className="svc svc-wide reveal" href="#contact">
-              <Image
-                src="/img/como-boat.jpg"
-                alt="Guest laughing on a speedboat on an alpine lake"
-                fill
-                sizes="100vw"
-              />
-              <div className="svc-body">
-                <h3>
-                  The Travel <em>Desk</em>
-                </h3>
-                <p>
-                  In-house travel agents who coordinate flights,
-                  transportation, and accommodations for the whole crew. You
-                  pick the destination. We move the party there.
-                </p>
-              </div>
-            </a>
+            {services
+              .filter((s) => s.slug !== "party911")
+              .map((svc, i) => {
+                const words = svc.name.split(" ");
+                const last = words.pop();
+                const isWide = svc.slug === "travel";
+                return (
+                  <Link
+                    className={`svc reveal ${isWide ? "svc-wide" : ""}`}
+                    href={`/services/${svc.slug}`}
+                    key={svc.slug}
+                  >
+                    <Image
+                      src={svc.cardImg}
+                      alt={svc.cardAlt}
+                      fill
+                      sizes={
+                        isWide
+                          ? "100vw"
+                          : "(max-width: 620px) 100vw, (max-width: 980px) 50vw, 33vw"
+                      }
+                      loading={i < 3 ? undefined : "lazy"}
+                    />
+                    <div className="svc-body">
+                      <h3>
+                        {words.join(" ")} <em>{last}</em>
+                      </h3>
+                      <p>{svc.card}</p>
+                    </div>
+                  </Link>
+                );
+              })}
           </div>
         </div>
       </section>
 
-      <section id="trips">
+      <section className="rescue-band">
+        <div className="wrap">
+          <div className="reveal">
+            <p className="kicker">Party911</p>
+            <h2>
+              The DJ cancelled.
+              <br />
+              We don&apos;t.
+            </h2>
+            <p>
+              Day-of cancellations, no-show vendors, unexpected disasters. Our
+              emergency line runs a limited menu at premium prices, and within
+              NYC we can usually have music playing within 3 to 4 hours. If
+              you&apos;re in a jam, we can get you out of it.
+            </p>
+          </div>
+          <Link className="btn btn-alert reveal" href="/services/party911">
+            Sound the alarm
+          </Link>
+        </div>
+      </section>
+
+      <section id="residents">
+        <div className="wrap">
+          <div className="section-head reveal">
+            <p className="kicker">The residents</p>
+            <h2>Six DJs. Zero requests for Mr. Brightside.</h2>
+            <p className="lede">
+              Our resident roster plays our parties and yours. Every SoundCloud
+              link is a preview of your dance floor.
+            </p>
+          </div>
+          <div className="dj-grid">
+            {djs.map((dj) => (
+              <a
+                className="dj-card reveal"
+                href={dj.url}
+                key={dj.name}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>{dj.name}</h3>
+                <p>{dj.blurb}</p>
+                <span className="sc">Listen on SoundCloud</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-tint" id="trips">
         <div className="wrap">
           <div className="section-head reveal">
             <p className="kicker">Field notes</p>
             <h2>The trips.</h2>
             <p className="lede">
-              A running record of professionally good times. Some of these were
-              our parties. Some were client events. All of them ended too late.
+              {trips.length} chapters and counting: the Hamptons, upstate,
+              Mexico, the Mediterranean, and a few places we agreed not to name.
             </p>
           </div>
-          <Gallery shots={shots} />
+          <Gallery shots={homeShots} />
+          <Link className="section-foot-link reveal" href="/trips">
+            Every trip, in detail
+          </Link>
         </div>
       </section>
 
-      <section id="contact">
+      <section className="cta-band">
         <div className="wrap reveal">
           <p className="kicker">Book us</p>
           <h2>
@@ -286,22 +252,13 @@ export default function Home() {
           </h2>
           <p className="lede">
             Tell us the date, the headcount, and how ambitious we are allowed
-            to be. We will take it from there.
+            to be. A producer replies within one business day.
           </p>
-          <a className="btn btn-solid" href="mailto:hello@frienders.co">
-            hello@frienders.co
-          </a>
-          <p className="contact-line">
-            New York City and wherever the trip goes.{" "}
-            <a href="https://frienders.co">frienders.co</a>
-          </p>
+          <Link className="btn btn-solid" href="/contact">
+            Plan something
+          </Link>
         </div>
       </section>
-
-      <footer>
-        <div>&copy; 2026 Frienders Collective. Est. 2018.</div>
-        <div className="tag">&quot;Help. We&apos;ve fallen and must turn up.&quot;</div>
-      </footer>
     </>
   );
 }
