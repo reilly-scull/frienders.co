@@ -312,8 +312,8 @@ h2 .accent { color: var(--sun); }
   margin-bottom: 16px; color: var(--ink);
 }
 .person .headshot {
-  width: 100%; height: auto; aspect-ratio: 1; object-fit: cover;
-  border-radius: 12px; margin-bottom: 16px;
+  width: 72%; max-width: 170px; height: auto; aspect-ratio: 1; object-fit: cover;
+  border-radius: 50%; margin-bottom: 16px;
   filter: grayscale(1) contrast(1.05);
 }
 .person h3 { font-size: 19px; margin-bottom: 4px; }

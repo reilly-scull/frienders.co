@@ -88,7 +88,7 @@ export default function AboutPage() {
         <div className="wrap">
           <div className="section-head reveal">
             <p className="kicker">How we work</p>
-            <h2>Three rules. Zero exceptions.</h2>
+            <h2>Four rules. Zero exceptions.</h2>
           </div>
           <div className="feature-grid">
             <div className="feature reveal">

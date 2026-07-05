@@ -394,21 +394,21 @@ export type Person = { name: string; role: string; photo?: string };
 
 export const leadership: Person[] = [
   { name: "Samantha", role: "Chief Executive Officer", photo: "/img/team/samantha.jpg" },
-  { name: "Kathryn", role: "Chief Operating Officer" },
+  { name: "Kathryn", role: "Chief Operating Officer", photo: "/img/team/kathryn.jpg"  },
   { name: "Reilly", role: "Chief Technology Officer, Chairman of the Board", photo: "/img/team/reilly.jpg" },
-  { name: "Evan", role: "Chief Financial Officer" },
+  { name: "Evan", role: "Chief Financial Officer", photo: "/img/team/evan.jpg"  },
   { name: "Wendy", role: "Chief of Staff" },
   { name: "Alain", role: "General Counsel", photo: "/img/team/alain.jpg" },
 ];
 
 export const directors: Person[] = [
-  { name: "Maria", role: "Director, Catering" },
-  { name: "Hira", role: "Director, Travel" },
+  { name: "Maria", role: "Director, Catering", photo: "/img/team/maria.jpg"  },
+  { name: "Hira", role: "Director, Travel", photo: "/img/team/hira.jpg"  },
   { name: "Lina", role: "Director, Marketing & Communications", photo: "/img/team/lina.jpg" },
   { name: "Greg", role: "Director, People & Chancellor of Sass", photo: "/img/team/greg.jpg" },
   { name: "Kyle", role: "Director, Supply Chain Engineering" },
   { name: "Halima", role: "Director, Recovery Services" },
-  { name: "Ashley", role: "Director, Strategic Partnerships" },
+  { name: "Ashley", role: "Director, Strategic Partnerships", photo: "/img/team/ashley.jpg"  },
 ];
 
 export const production: Person[] = [
