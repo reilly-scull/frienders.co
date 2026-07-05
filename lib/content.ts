@@ -220,6 +220,7 @@ export const services: Service[] = [
       { src: "/img/sunset-sail.jpg", alt: "Couple on a sailboat at sunset", width: 1500, height: 1125 },
       { src: "/img/como-boat.jpg", alt: "Guest laughing on a speedboat on an alpine lake", width: 934, height: 1400 },
       { src: "/img/beach-selfie.jpg", alt: "Group selfie on a warm-water beach", width: 1500, height: 1125 },
+      { src: "/img/tuscany-dinner.jpg", alt: "A long lunch on a stone terrace abroad", width: 1050, height: 1400 },
     ],
     pricing: { label: "Trip planning", from: "$150/person", note: "Groups of 6 to 20; on-the-ground production quoted per trip" },
     cta: { title: "Pick the place. We move the party.", body: "Send us a destination and a headcount, and the travel desk handles flights, villas, boats, and everything in between.", button: "Start a trip" },
@@ -330,6 +331,7 @@ export const productions: Production[] = [
       { src: "/img/sail-flag.jpg", alt: "Pointing at the Statue of Liberty from the bow", width: 1125, height: 1400 },
       { src: "/img/beach-crew.jpg", alt: "The crew ashore on a Caribbean sailing trip", width: 1024, height: 768 },
       { src: "/img/sail-liberty.jpg", alt: "Sailing past the Statue of Liberty at golden hour", width: 1125, height: 1500 },
+      { src: "/img/sail-skyline.jpg", alt: "The crew in matching sailor hats with the Manhattan skyline behind", width: 1440, height: 1080 },
     ],
   },
   {
