@@ -7,6 +7,8 @@ export default function PageHero({
   img,
   alt,
   compact,
+  tall,
+  imgPosition,
 }: {
   kicker: string;
   title: React.ReactNode;
@@ -14,11 +16,20 @@ export default function PageHero({
   img: string;
   alt: string;
   compact?: boolean;
+  tall?: boolean;
+  imgPosition?: string;
 }) {
   return (
-    <div className={`page-hero ${compact ? "compact" : ""}`}>
+    <div className={`page-hero ${compact ? "compact" : ""} ${tall ? "tall" : ""}`}>
       <div className="page-hero-bg">
-        <Image src={img} alt={alt} fill priority sizes="100vw" />
+        <Image
+          src={img}
+          alt={alt}
+          fill
+          priority
+          sizes="100vw"
+          style={imgPosition ? { objectPosition: imgPosition } : undefined}
+        />
       </div>
       <div className="page-hero-inner">
         <p className="kicker">{kicker}</p>

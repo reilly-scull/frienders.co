@@ -62,6 +62,8 @@ export default async function OccasionPage({
         }
         img={occ.heroImg}
         alt={occ.heroAlt}
+        imgPosition={occ.heroPosition}
+        tall={occ.heroTall}
       />
 
       <section>

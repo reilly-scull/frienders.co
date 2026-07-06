@@ -4,6 +4,8 @@ export type Occasion = {
   kicker: string;
   heroImg: string;
   heroAlt: string;
+  heroPosition?: string;
+  heroTall?: boolean;
   intro: string[];
   features: { title: string; body: string }[];
   gallery?: { src: string; alt: string; width: number; height: number }[];
@@ -17,8 +19,10 @@ export const occasions: Occasion[] = [
     slug: "birthdays",
     name: "Birthdays",
     kicker: "Another year, properly marked",
-    heroImg: "/img/costume-baby.jpg",
+    heroImg: "/img/birthday-baby.jpg",
     heroAlt: "A committed birthday costume",
+    heroPosition: "center 30%",
+    heroTall: true,
     intro: [
       "A birthday is the one night a year that is officially, unarguably yours. We produce birthday parties in NYC for groups under 150: venue, sound, resident DJ, bar, catering, and a producer who keeps the whole thing pointed at you.",
       "From a listening-bar dinner for 20 to a full takeover with a dance floor that goes late, the production scales to the ambition. The guest of honor's only job is showing up.",
