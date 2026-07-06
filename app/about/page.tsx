@@ -67,8 +67,8 @@ export default function AboutPage() {
           </div>
           <div className="story-photos reveal">
             <Image
-              src="/img/acro-sunset.jpg"
-              alt="Acro yoga at sunset on a hilltop"
+              src="/img/about-crew.jpg"
+              alt="Maria, Greg, and Reilly out with the crew"
               width={1500}
               height={1125}
               sizes="(max-width: 860px) 50vw, 25vw"

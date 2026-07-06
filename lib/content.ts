@@ -28,11 +28,11 @@ export const services: Service[] = [
     name: "Private Events",
     short: "Full event production",
     card: "Birthdays, weddings, corporate offsites, things that defy category. Full production, hosted by us, thrown for you.",
-    cardImg: "/img/festival-crew.jpg",
-    cardAlt: "A private production under the Kosciuszko Bridge",
+    cardImg: "/img/tent-dance.jpg",
+    cardAlt: "Guests dancing dressed up under string lights at a private event",
     kicker: "Full production",
-    heroImg: "/img/festival-crew.jpg",
-    heroAlt: "Guests at a private production under the Kosciuszko Bridge",
+    heroImg: "/img/tent-dance.jpg",
+    heroAlt: "Guests dancing dressed up under string lights at a private event",
     intro: [
       "You bring the occasion and the guest list. We bring everything else: the venue, the sound, the lights, the music, the bar, the food, and the people who make it all run.",
       "We work best with groups under 150 who care about production value. Every event gets a dedicated producer, a run-of-show, and a crew that has done this a hundred times and still loves it.",
@@ -44,6 +44,7 @@ export const services: Service[] = [
       { title: "The morning after", body: "Strike, cleanup, lost-and-found, recovery services. The venue looks like nothing happened. You will know better." },
     ],
     gallery: [
+      { src: "/img/festival-crew.jpg", alt: "A private production under the Kosciuszko Bridge", width: 1125, height: 1500 },
       { src: "/img/park-blanket.jpg", alt: "An afternoon event on blankets in the park", width: 1125, height: 1500 },
       { src: "/img/food.jpg", alt: "A catered course, mid-service", width: 1400, height: 1050 },
     ],
@@ -73,7 +74,6 @@ export const services: Service[] = [
     ],
     gallery: [
       { src: "/img/ev-bar.jpg", alt: "A dinner party in full swing at a partner space", width: 1125, height: 1500 },
-      { src: "/img/street-pair.jpg", alt: "Outside the pencil factory party in Greenpoint", width: 1500, height: 1125 },
       { src: "/img/lounge-neon.jpg", alt: "The hi-fi lounge mid-house-party", width: 1500, height: 1125 },
     ],
     pricing: { label: "Venue buyouts", from: "$3,000", note: "Weeknight minimum spend; weekends scale with the room" },
@@ -105,6 +105,7 @@ export const services: Service[] = [
       { src: "/img/boat-dj.jpg", alt: "DJ playing on deck of a boat with headphones", width: 1125, height: 1500 },
       { src: "/img/dj-booth.jpg", alt: "DJ booth under blue geometric light", width: 1125, height: 1500 },
       { src: "/img/equipment-2.jpg", alt: "DJ controller with the dance-lighting package firing", width: 1050, height: 1400 },
+      { src: "/img/street-pair.jpg", alt: "Our rig outside the pencil factory party in Greenpoint", width: 1500, height: 1125 },
     ],
     pricing: { label: "Sound systems", from: "$400/day", note: "Delivered, set up, and tuned; lighting packages from $300" },
     cta: { title: "Our rigs, your room.", body: "Tell us the space and the crowd; we size the system, deliver it, and tune it before doors.", button: "Book the gear" },
@@ -190,6 +191,7 @@ export const services: Service[] = [
       { src: "/img/wine-pair.jpg", alt: "Two friends posing at a wine bar", width: 1125, height: 1500 },
       { src: "/img/club-film.jpg", alt: "The dance floor on 35mm, hard flash", width: 1500, height: 995 },
       { src: "/img/photobooth.jpg", alt: "Friends piled into a photo booth mid-party", width: 1400, height: 933 },
+      { src: "/img/sam-sc.jpg", alt: "Golden hour portrait on the South Carolina trip", width: 1500, height: 1125 },
     ],
     pricing: { label: "Event coverage", from: "$450/hr", note: "2-hour minimum; photo booth builds from $900" },
     cta: { title: "It happened. Prove it.", body: "Our photographers work dance floors, not step-and-repeats, so you get the night the way it actually felt.", button: "Book the coverage" },
@@ -201,8 +203,8 @@ export const services: Service[] = [
     name: "The Travel Desk",
     short: "We move the party",
     card: "In-house travel agents who move the whole crew: flights, villas, boats, and ground transport. You pick the destination.",
-    cardImg: "/img/caribbean-bay.jpg",
-    cardAlt: "A Caribbean bay seen from the hillside above",
+    cardImg: "/img/acro-sunset.jpg",
+    cardAlt: "Airplane pose at golden hour on a trip",
     kicker: "We move the party",
     heroImg: "/img/caribbean-bay.jpg",
     heroAlt: "A Caribbean bay with anchored boats seen from the hillside",
@@ -348,6 +350,7 @@ export const productions: Production[] = [
       { src: "/img/sail-golden.jpg", alt: "Golden hour on a New York Harbor sail", width: 1500, height: 1125 },
       { src: "/img/sunset-sail.jpg", alt: "Sunset over the bow on an evening sail", width: 1500, height: 1125 },
       { src: "/img/sail-selfie.jpg", alt: "Captain-hat selfie somewhere off the coast", width: 1500, height: 1127 },
+      { src: "/img/sail-travis.jpg", alt: "At the helm on a week-long sailing charter", width: 994, height: 1500 },
     ],
   },
   {
@@ -425,25 +428,25 @@ export const productions: Production[] = [
 export type Person = { name: string; role: string; photo?: string };
 
 export const leadership: Person[] = [
-  { name: "Samantha", role: "Chief Executive Officer", photo: "/img/team/samantha.jpg" },
-  { name: "Kathryn", role: "Chief Operating Officer", photo: "/img/team/kathryn.jpg"  },
-  { name: "Reilly", role: "Chief Technology Officer, Chairman of the Board", photo: "/img/team/reilly.jpg" },
-  { name: "Evan", role: "Chief Financial Officer", photo: "/img/team/evan.jpg"  },
-  { name: "Wendy", role: "Chief of Staff", photo: "/img/team/wendy.jpg" },
-  { name: "Alain", role: "General Counsel", photo: "/img/team/alain.jpg" },
+  { name: "Samantha", role: "CEO", photo: "/img/team/samantha.jpg" },
+  { name: "Kathryn", role: "COO", photo: "/img/team/kathryn.jpg"  },
+  { name: "Reilly", role: "CTO & Chairman of the Board", photo: "/img/team/reilly.jpg" },
+  { name: "Evan", role: "CFO", photo: "/img/team/evan.jpg"  },
+  { name: "Alain", role: "GC", photo: "/img/team/alain.jpg" },
 ];
 
 export const directors: Person[] = [
   { name: "Maria", role: "Director, Catering", photo: "/img/team/maria.jpg"  },
   { name: "Hira", role: "Director, Travel", photo: "/img/team/hira.jpg"  },
   { name: "Lina", role: "Director, Marketing & Communications", photo: "/img/team/lina.jpg" },
-  { name: "Greg", role: "Director, People & Chancellor of Sass", photo: "/img/team/greg.jpg" },
+  { name: "Greg", role: "Director, Creative", photo: "/img/team/greg.jpg" },
   { name: "Ashley", role: "Director, Strategic Partnerships", photo: "/img/team/ashley.jpg"  },
 ];
 
 export const production: Person[] = [
   { name: "Kelsea", role: "Producer", photo: "/img/team/kelsea.jpg" },
   { name: "Derek", role: "Producer" },
+  { name: "Wendy", role: "Producer (Miami)", photo: "/img/team/wendy.jpg" },
   { name: "Yashar", role: "Production Support" },
 ];
 

@@ -25,7 +25,7 @@ const homeShots: Shot[] = [
   { src: "/img/parachute-toss.jpg", alt: "A parachute game in full swing", caption: "Group activity, mandatory fun", width: 1400, height: 1050 },
   { src: "/img/wine-lineup.jpg", alt: "A lineup of wine bottles for the tasting", caption: "Tasting, then not tasting", width: 1400, height: 1050 },
   { src: "/img/wburg-sunset.jpg", alt: "Sunset over the Williamsburg Bridge from a rooftop", caption: "Borough golden hour", width: 1500, height: 1125 },
-  { src: "/img/costume-baby.jpg", alt: "A committed and questionable costume choice", caption: "Commitment to the bit", width: 806, height: 1400 },
+  { src: "/img/bar-blooms.jpg", alt: "A birthday embrace under the pink lights", caption: "Under the lights", width: 1500, height: 1125 },
 ];
 
 const tickerItems = [

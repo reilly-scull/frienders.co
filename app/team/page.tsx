@@ -54,50 +54,24 @@ export default function TeamPage() {
             <span className="accent">Staffed like a crew.</span>
           </>
         }
-        sub="Titles are real. So is the org chart. The Chancellor of Sass reports directly to the board."
+        sub="Leadership, directors, and the producers who run the room on the day. Titles are real. So is the org chart."
         img="/img/formal-fountain.jpg"
         alt="The team dressed up around a city fountain"
       />
 
       <section>
         <div className="wrap">
-          <div className="section-head reveal">
-            <p className="kicker">Leadership</p>
-            <h2>The board.</h2>
-          </div>
-          <div className="team-grid">
+          <div className="team-grid reveal">
             {leadership.map((p, i) => (
               <PersonCard key={p.name} person={p} i={i} />
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section-tint">
-        <div className="wrap">
-          <div className="section-head reveal">
-            <p className="kicker">Directors</p>
-            <h2>Department heads.</h2>
-          </div>
-          <div className="team-grid">
+          <div className="team-grid reveal" style={{ marginTop: 16 }}>
             {directors.map((p, i) => (
               <PersonCard key={p.name} person={p} i={i + 1} />
             ))}
           </div>
-        </div>
-      </section>
-
-      <section>
-        <div className="wrap">
-          <div className="section-head reveal">
-            <p className="kicker">Production</p>
-            <h2>The ones on the ground.</h2>
-            <p className="lede">
-              Producers run the room on the day: the timeline, the vendors,
-              the saves you never hear about.
-            </p>
-          </div>
-          <div className="team-grid">
+          <div className="team-grid reveal" style={{ marginTop: 16 }}>
             {production.map((p, i) => (
               <PersonCard key={p.name} person={p} i={i + 2} />
             ))}

@@ -17,8 +17,8 @@ export const occasions: Occasion[] = [
     slug: "birthdays",
     name: "Birthdays",
     kicker: "Another year, properly marked",
-    heroImg: "/img/bar-blooms.jpg",
-    heroAlt: "A birthday embrace under the pink lights",
+    heroImg: "/img/costume-baby.jpg",
+    heroAlt: "A committed birthday costume",
     intro: [
       "A birthday is the one night a year that is officially, unarguably yours. We produce birthday parties in NYC for groups under 150: venue, sound, resident DJ, bar, catering, and a producer who keeps the whole thing pointed at you.",
       "From a listening-bar dinner for 20 to a full takeover with a dance floor that goes late, the production scales to the ambition. The guest of honor's only job is showing up.",
@@ -39,8 +39,8 @@ export const occasions: Occasion[] = [
     slug: "weddings",
     name: "Weddings",
     kicker: "The best party either family has seen",
-    heroImg: "/img/tent-dance.jpg",
-    heroAlt: "Guests dancing dressed up under string lights at a tented reception",
+    heroImg: "/img/boat-kiss.jpg",
+    heroAlt: "A kiss on the bow in matching life vests",
     intro: [
       "We produce weddings the way we produce everything: like the best party anyone in attendance has been to, that happens to include a ceremony. Under-150 guest lists are our specialty, where every table is a good table.",
       "We slot in alongside your planner or run the production end to end: venue, sound, lighting, DJs, catering through Curated Kitchen, bar, staff, and the after-party nobody wants to admit they are planning. That one is our favorite part.",
@@ -52,7 +52,6 @@ export const occasions: Occasion[] = [
     ],
     gallery: [
       { src: "/img/dock-toast.jpg", alt: "A champagne toast on the dock at dusk", width: 702, height: 510 },
-      { src: "/img/boat-kiss.jpg", alt: "A kiss on the bow in matching life vests", width: 1500, height: 1125 },
       { src: "/img/wburg-bar.jpg", alt: "jacqsmiley playing from the bar top at the reception", width: 1125, height: 1500 },
     ],
     seoTitle: "Wedding Production and After-Parties in NYC",
