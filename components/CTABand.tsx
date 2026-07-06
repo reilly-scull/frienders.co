@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DiscoFill from "@/components/DiscoFill";
 
 // Four-point star, drawn with smooth concave edges. Rendered as inline SVG so
 // the sparkles stay crisp at any resolution and can carry a gradient + glow.
@@ -51,6 +52,7 @@ export default function CTABand({
           href={href}
         >
           <span className="btn-label">{cta}</span>
+          {variant === "disco" && <DiscoFill />}
           {variant === "sparkle" && (
             <>
               <Sparkle pos="s1" size={18} delay={0} />
