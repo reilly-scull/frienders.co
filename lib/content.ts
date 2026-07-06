@@ -28,11 +28,11 @@ export const services: Service[] = [
     name: "Private Events",
     short: "Full event production",
     card: "Birthdays, weddings, corporate offsites, things that defy category. Full production, hosted by us, thrown for you.",
-    cardImg: "/img/bar-blooms.jpg",
-    cardAlt: "Guests in a group embrace under colored party lights",
+    cardImg: "/img/festival-crew.jpg",
+    cardAlt: "A private production under the Kosciuszko Bridge",
     kicker: "Full production",
-    heroImg: "/img/bar-blooms.jpg",
-    heroAlt: "Guests celebrating in a group embrace under magenta light",
+    heroImg: "/img/festival-crew.jpg",
+    heroAlt: "Guests at a private production under the Kosciuszko Bridge",
     intro: [
       "You bring the occasion and the guest list. We bring everything else: the venue, the sound, the lights, the music, the bar, the food, and the people who make it all run.",
       "We work best with groups under 150 who care about production value. Every event gets a dedicated producer, a run-of-show, and a crew that has done this a hundred times and still loves it.",
@@ -72,9 +72,9 @@ export const services: Service[] = [
       { heading: "Gowanus", items: ["Hi-fi listening bar with an audiophile-grade system", "Intimate rooms for 20 to 80", "Made for people who care what it sounds like"] },
     ],
     gallery: [
-      { src: "/img/ev-bar.jpg", alt: "Guests at the bar of our East Village partner space", width: 1125, height: 1500 },
-      { src: "/img/wburg-bar.jpg", alt: "Dancing on the bar at our Williamsburg partner venue", width: 1125, height: 1500 },
-      { src: "/img/lounge-neon.jpg", alt: "Warm neon light in the Gowanus listening bar", width: 1500, height: 1125 },
+      { src: "/img/ev-bar.jpg", alt: "A dinner party in full swing at a partner space", width: 1125, height: 1500 },
+      { src: "/img/street-pair.jpg", alt: "Outside the pencil factory party in Greenpoint", width: 1500, height: 1125 },
+      { src: "/img/lounge-neon.jpg", alt: "The hi-fi lounge mid-house-party", width: 1500, height: 1125 },
     ],
     pricing: { label: "Venue buyouts", from: "$3,000", note: "Weeknight minimum spend; weekends scale with the room" },
     cta: { title: "We know a room for that.", body: "Tell us the headcount and the vibe, and we will match you to a space we know cold.", button: "Find your room" },
@@ -151,10 +151,10 @@ export const services: Service[] = [
     gallery: [
       { src: "/img/food-cauliflower.jpg", alt: "Roasted cauliflower dish plated for service", width: 1125, height: 1500 },
       { src: "/img/limes.jpg", alt: "Fresh-cut limes on a board behind the bar", width: 1500, height: 1125 },
-      { src: "/img/dinner-bw.jpg", alt: "Dinner party in black and white", width: 1500, height: 844 },
+      { src: "/img/dinner-bw.jpg", alt: "The Friendsgiving table in black and white", width: 1500, height: 844 },
       { src: "/img/drink-flight.jpg", alt: "Colorful cocktail flight with citrus", width: 1125, height: 1500 },
-      { src: "/img/brunch-table.jpg", alt: "Friends gathered around a loaded brunch table", width: 1500, height: 1125 },
-      { src: "/img/steak-dinner.jpg", alt: "Steak dinner and red wine at a long table", width: 1125, height: 1500 },
+      { src: "/img/breads.jpg", alt: "Jalapeno-cheddar pretzel knots, fresh from the oven", width: 1125, height: 1500 },
+      { src: "/img/steak-dinner.jpg", alt: "Beef wellington, plated, with a glass of red", width: 1125, height: 1500 },
     ],
     pricing: { label: "Catering", from: "$45/head", note: "Passed bites; plated dinners from $125/head. Bartenders from $60/hr, 4-hour minimum" },
     cta: { title: "Feed them well. They will forgive anything.", body: "From passed bites for 20 to plated for 120, tell us the occasion and we will build the menu around it.", button: "Build the menu" },
@@ -187,7 +187,7 @@ export const services: Service[] = [
       { src: "/img/film-women.jpg", alt: "Flash-lit portrait of two friends mid-laugh", width: 995, height: 1500 },
       { src: "/img/flash-crew.jpg", alt: "Flash selfie of the whole crew at a house party", width: 1127, height: 1500 },
       { src: "/img/wine-pair.jpg", alt: "Two friends posing at a wine bar", width: 1125, height: 1500 },
-      { src: "/img/cheers-neon.jpg", alt: "Cocktail cheers caught in neon light", width: 1125, height: 1500 },
+      { src: "/img/club-film.jpg", alt: "The dance floor on 35mm, hard flash", width: 1500, height: 995 },
       { src: "/img/photobooth.jpg", alt: "Friends piled into a photo booth mid-party", width: 1400, height: 933 },
     ],
     pricing: { label: "Event coverage", from: "$450/hr", note: "2-hour minimum; photo booth builds from $900" },
@@ -216,10 +216,10 @@ export const services: Service[] = [
     ],
     gallery: [
       { src: "/img/boat-laugh.jpg", alt: "Guest laughing on a boat on Lake Como", width: 1000, height: 1500 },
-      { src: "/img/sunset-sail.jpg", alt: "Couple on a sailboat at sunset", width: 1500, height: 1125 },
       { src: "/img/como-boat.jpg", alt: "Guest laughing on a speedboat on an alpine lake", width: 934, height: 1400 },
       { src: "/img/calm-boat.jpg", alt: "A quiet afternoon on the water between anchorages", width: 1500, height: 1125 },
-      { src: "/img/beach-selfie.jpg", alt: "Group selfie on a warm-water beach", width: 1500, height: 1125 },
+      { src: "/img/med-yacht.jpg", alt: "The whole charter gathered on the stern at dusk in the Med", width: 1125, height: 1500 },
+      { src: "/img/mexico-pool.jpg", alt: "The villa pool in Mexico, palms and footbridge included", width: 1125, height: 1500 },
       { src: "/img/tuscany-dinner.jpg", alt: "A long lunch on a stone terrace abroad", width: 1050, height: 1400 },
     ],
     pricing: { label: "Trip planning", from: "$150/person", note: "Groups of 6 to 20; on-the-ground production quoted per trip" },
@@ -301,6 +301,7 @@ export const productions: Production[] = [
     img: { src: "/img/pool-party.jpg", alt: "Pool party with a DJ playing under a cabana", width: 1500, height: 1125 },
     extras: [
       { src: "/img/farmhouse-pool.jpg", alt: "The pool cabana rig at the Hamptons farmhouse", width: 1125, height: 1500 },
+      { src: "/img/summers-end-2.jpg", alt: "The farmhouse pool, vineyard view included", width: 1125, height: 1500 },
     ],
   },
   {
@@ -322,12 +323,13 @@ export const productions: Production[] = [
     name: "South Carolina",
     stats: "15 people. 5 days. Barrier-island beach house.",
     body: "Five days on a barrier island with a house full of friends and a schedule with exactly one item on it: the tide. Long beach days, longer dinners, and the kind of quiet that makes the loud parts feel earned.",
-    img: { src: "/img/island-nap.jpg", alt: "An afternoon nap in the shade on the beach", width: 1500, height: 1125 },
+    img: { src: "/img/sc-beach-dusk.jpg", alt: "The crew walking the beach at dusk, dressed for dinner", width: 1125, height: 1500 },
     extras: [
-      { src: "/img/sc-beach-dusk.jpg", alt: "The crew walking the beach at dusk, dressed for dinner", width: 1125, height: 1500 },
       { src: "/img/sc-pool.jpg", alt: "Golden hour at the beach-house pool", width: 1500, height: 1125 },
-      { src: "/img/sc-beach-group.jpg", alt: "The whole house gathered on the sand at golden hour", width: 1500, height: 1125 },
       { src: "/img/sc-pool-floaties.jpg", alt: "Pool floaties and raised arms at the beach house", width: 1125, height: 1500 },
+      { src: "/img/sc-grotto.jpg", alt: "The grotto pool near the beach house", width: 1125, height: 844 },
+      { src: "/img/beach-selfie.jpg", alt: "Beach-day selfie on the barrier island", width: 1500, height: 1125 },
+      { src: "/img/pool-pair.jpg", alt: "Poolside at the barrier-island house", width: 1125, height: 1500 },
     ],
   },
   {
@@ -342,6 +344,9 @@ export const productions: Production[] = [
       { src: "/img/sail-liberty.jpg", alt: "Sailing past the Statue of Liberty at golden hour", width: 1125, height: 1500 },
       { src: "/img/sail-skyline.jpg", alt: "The crew in matching sailor hats with the Manhattan skyline behind", width: 1440, height: 1080 },
       { src: "/img/sail-anchor.jpg", alt: "Anchored over clear water, swimmers off the bow", width: 1280, height: 720 },
+      { src: "/img/sail-golden.jpg", alt: "Golden hour on a New York Harbor sail", width: 1500, height: 1125 },
+      { src: "/img/sunset-sail.jpg", alt: "Sunset over the bow on an evening sail", width: 1500, height: 1125 },
+      { src: "/img/sail-selfie.jpg", alt: "Captain-hat selfie somewhere off the coast", width: 1500, height: 1127 },
     ],
   },
   {
@@ -355,14 +360,14 @@ export const productions: Production[] = [
     slug: "desert-adventures",
     name: "Desert Adventures",
     stats: "5 people. 1 week. Boulder to Joshua Tree.",
-    body: "Five people, one week, and a route that read like a dare: parties in Boulder and Joshua Tree with pit stops across Utah and Nevada. Red rocks, empty highways, borrowed dance floors, swimming holes that were not on any map, and a sound system that never once got to rest.",
+    body: "Five people, one week, and a route that read like a dare: parties in Boulder and Joshua Tree with pit stops across Utah and Nevada. Red rocks, empty highways, borrowed dance floors, roadside barbecue, and a sound system that never once got to rest.",
     img: { src: "/img/desert-rv.jpg", alt: "The crew and the rented RV parked in red-rock desert", width: 1500, height: 1125 },
     extras: [
       { src: "/img/zion.jpg", alt: "The canyon walls of Zion at midday", width: 1500, height: 1124 },
       { src: "/img/joshua-tree.jpg", alt: "A desert fire pit blazing at dusk in Joshua Tree", width: 1124, height: 1500 },
       { src: "/img/desert-beer.jpg", alt: "A cold one on a boulder above the desert horizon", width: 1500, height: 1125 },
       { src: "/img/dj-blue.jpg", alt: "The desert party stage under blue geometric light", width: 1050, height: 1400 },
-      { src: "/img/desert-pool.jpg", alt: "A swimming hole that was not on any map", width: 1125, height: 844 },
+      { src: "/img/desert-bbq.jpg", alt: "Roadside barbecue: ribs, slaw, and no regrets", width: 1125, height: 1500 },
     ],
   },
   {
@@ -372,8 +377,10 @@ export const productions: Production[] = [
     body: "Our high holiday. Warehouses, brownstones, barns, and bars, each year a different city block and a different fever. Costumes are mandatory, effort is noticed, and the photographic evidence is permanent.",
     img: { src: "/img/wig-trio.jpg", alt: "Three guests in full costume and wigs on Halloween", width: 1125, height: 1500 },
     extras: [
-      { src: "/img/shark-party.jpg", alt: "A shark costume winning the party", width: 1500, height: 1000 },
       { src: "/img/halloween-dj.jpg", alt: "The DJ in costume under red light", width: 1500, height: 1125 },
+      { src: "/img/halloween-group.jpg", alt: "The costume crew crammed into one frame", width: 1500, height: 917 },
+      { src: "/img/halloween-pair.jpg", alt: "Costumes holding up surprisingly well past midnight", width: 1125, height: 1500 },
+      { src: "/img/brunch-table.jpg", alt: "The Halloween after-party spread", width: 1500, height: 1125 },
     ],
   },
   {
@@ -384,6 +391,9 @@ export const productions: Production[] = [
     img: { src: "/img/beach-towels.jpg", alt: "Friends lined up on beach towels on white sand", width: 1500, height: 1125 },
     extras: [
       { src: "/img/beach-selfie-2.jpg", alt: "Beach day group selfie", width: 1500, height: 1124 },
+      { src: "/img/island-nap.jpg", alt: "An afternoon nap in the shade at Rockaway Beach", width: 1500, height: 1125 },
+      { src: "/img/parachute-beach.jpg", alt: "Parachute games at a Mediterranean beach party", width: 1125, height: 1500 },
+      { src: "/img/captain-guy.jpg", alt: "The off-grid sound rig, beach edition", width: 1125, height: 1500 },
     ],
   },
   {
@@ -398,7 +408,10 @@ export const productions: Production[] = [
     name: "A Birthday at Public Records",
     stats: "Private takeover. World-class sound.",
     body: "Every year, one very lucky birthday takes over Public Records: a private takeover of one of the best-sounding rooms in New York. Our nightlife connections handle the room and the staff, our residents handle the music, and the birthday boy handles exactly nothing. Rinse, repeat, annually.",
-    img: { src: "/img/club-film.jpg", alt: "The DJ working a dark club room, shot on film", width: 1500, height: 995 },
+    img: { src: "/img/public-records-2.jpg", alt: "The birthday crew mid-takeover at Public Records", width: 1500, height: 1000 },
+    extras: [
+      { src: "/img/disco-selfie.jpg", alt: "Sequins and a very good wig on the Public Records floor", width: 1400, height: 1050 },
+    ],
   },
   {
     slug: "valentines",
@@ -406,6 +419,9 @@ export const productions: Production[] = [
     stats: "12 people. 3 days of prep. 100 candles.",
     body: "Three days of prep for one dinner: rose petals everywhere, a hundred candles, rose prosecco on arrival, roast tomato soup, osso buco alla milanese, and a Barolo that deserved its own place setting. Proof that production value works at twelve covers, too.",
     img: { src: "/img/private-dining.jpg", alt: "Candlelit private dining room set for a Valentine's dinner", width: 1400, height: 934 },
+    extras: [
+      { src: "/img/valentines-2.jpg", alt: "A hundred candles, up close", width: 1500, height: 1000 },
+    ],
   },
 ];
 

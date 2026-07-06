@@ -17,8 +17,8 @@ export const occasions: Occasion[] = [
     slug: "birthdays",
     name: "Birthdays",
     kicker: "Another year, properly marked",
-    heroImg: "/img/festival-crew.jpg",
-    heroAlt: "A birthday crew celebrating in the city",
+    heroImg: "/img/bar-blooms.jpg",
+    heroAlt: "A birthday embrace under the pink lights",
     intro: [
       "A birthday is the one night a year that is officially, unarguably yours. We produce birthday parties in NYC for groups under 150: venue, sound, resident DJ, bar, catering, and a producer who keeps the whole thing pointed at you.",
       "From a listening-bar dinner for 20 to a full takeover with a dance floor that goes late, the production scales to the ambition. The guest of honor's only job is showing up.",
@@ -29,8 +29,7 @@ export const occasions: Occasion[] = [
       { title: "The zero-stress clause", body: "One producer, one budget, one text thread. You will attend your own party as a guest." },
     ],
     gallery: [
-      { src: "/img/crew-shirts.jpg", alt: "The birthday crew in matching custom shirts", width: 1500, height: 1125 },
-      { src: "/img/bar-night.jpg", alt: "The party settling into the bar for the night", width: 1125, height: 1500 },
+      { src: "/img/cheers-neon.jpg", alt: "The birthday toast, glasses in", width: 1125, height: 1500 },
     ],
     seoTitle: "Birthday Party Planning and Production in NYC",
     seoDescription: "Birthday party production in New York City for groups under 150: venues, resident DJs, sound, bar, and catering. Dinner for 20 to a full takeover, from $5,000.",
@@ -54,7 +53,7 @@ export const occasions: Occasion[] = [
     gallery: [
       { src: "/img/dock-toast.jpg", alt: "A champagne toast on the dock at dusk", width: 702, height: 510 },
       { src: "/img/boat-kiss.jpg", alt: "A kiss on the bow in matching life vests", width: 1500, height: 1125 },
-      { src: "/img/street-pair.jpg", alt: "Dressed up and out on the town", width: 1500, height: 1125 },
+      { src: "/img/wburg-bar.jpg", alt: "jacqsmiley playing from the bar top at the reception", width: 1125, height: 1500 },
     ],
     seoTitle: "Wedding Production and After-Parties in NYC",
     seoDescription: "Wedding production in New York City for celebrations under 150 guests: sound, lighting, DJs, catering, staff, and legendary after-parties. With or alongside your planner.",
@@ -76,8 +75,8 @@ export const occasions: Occasion[] = [
       { title: "Actually fun", body: "Rafting, mountains, boats, bonfires. Trust falls only if requested in writing." },
     ],
     gallery: [
-      { src: "/img/palm-dining.jpg", alt: "The offsite dinner table with a garden view", width: 1500, height: 1125 },
-      { src: "/img/parachute-beach.jpg", alt: "Parachute games on the beach at sunset", width: 1125, height: 1500 },
+      { src: "/img/corp-event.jpg", alt: "A resident DJ playing the showroom launch", width: 1500, height: 1000 },
+      { src: "/img/shark-party.jpg", alt: "The office party, shark included", width: 1500, height: 1000 },
     ],
     seoTitle: "Corporate Offsites and Company Events in NYC",
     seoDescription: "Corporate event production and offsite trips for teams under 150: NYC venues, catering, DJs, and full travel-desk logistics. One invoice, one producer, events people actually attend.",
@@ -98,10 +97,6 @@ export const occasions: Occasion[] = [
       { title: "The boat", body: "Day sails and charters are our signature move: open water, off-grid sound, and no neighbors to apologize to." },
       { title: "The recovery", body: "Late checkouts, greasy breakfasts, and a schedule that respects the previous evening's decisions." },
     ],
-    gallery: [
-      { src: "/img/captain-guy.jpg", alt: "Self-appointed captain of the bachelor party", width: 1125, height: 1500 },
-      { src: "/img/pool-pair.jpg", alt: "Poolside outfits meeting expectations", width: 1125, height: 1500 },
-    ],
     seoTitle: "Bachelor and Bachelorette Party Planning NYC",
     seoDescription: "Bachelor and bachelorette weekends produced end to end: NYC nights, Hamptons houses, sailing charters, and warm-weather trips for groups of 6 to 20. The travel desk handles everything.",
     ctaTitle: "Send them off properly.",
@@ -110,8 +105,8 @@ export const occasions: Occasion[] = [
     slug: "holiday-parties",
     name: "Holiday Parties",
     kicker: "December, handled",
-    heroImg: "/img/winter-sail.jpg",
-    heroAlt: "A crew bundled up sailing New York Harbor in winter",
+    heroImg: "/img/living-room.jpg",
+    heroAlt: "The whole crew piled in for the holiday dinner",
     intro: [
       "Company holiday parties, friends-giving blowouts, and end-of-year dinners that outdo last year without anyone having to think about it. December venues in NYC go fast; our partner spaces and production stack mean you can book late and still look early.",
       "Full production for groups under 150: venue, sound, lighting warm enough to forgive the weather, bar programs with a signature pour, and catering that beats the usual trays.",
@@ -122,8 +117,8 @@ export const occasions: Occasion[] = [
       { title: "The January clause", body: "Winter dates in the new year run quieter calendars and better rates. The party does not know what month it is." },
     ],
     gallery: [
-      { src: "/img/song-moment.jpg", alt: "A holiday toast becoming a singalong", width: 1125, height: 1500 },
-      { src: "/img/ice-bottles.jpg", alt: "Bottles chilling on ice for the party", width: 1125, height: 1500 },
+      { src: "/img/song-moment.jpg", alt: "Cannoli service, taken very seriously", width: 1125, height: 1500 },
+      { src: "/img/palm-dining.jpg", alt: "The Friendsgiving table, set and waiting", width: 1500, height: 1125 },
     ],
     seoTitle: "Holiday Party Venues and Production in NYC",
     seoDescription: "Company holiday party production in New York City: partner venues in Manhattan and Brooklyn, catering, bar, DJs, and lighting for groups under 150. Late bookings welcome.",

@@ -5,9 +5,10 @@ import { services, djs, productions } from "@/lib/content";
 
 const homeShots: Shot[] = [
   { src: "/img/hill-picnic.jpg", alt: "Picnic blankets on a hillside at golden hour", caption: "Upstate, uphill", width: 1400, height: 1050 },
-  { src: "/img/sunset-hammock.jpg", alt: "Sunset over the water from a hammock on deck", caption: "Golden hour, every hour", width: 1050, height: 1400 },
+  { src: "/img/sunset-hammock.jpg", alt: "Sunset over the water from a hammock on deck", caption: "Puerto Rico, properly paced", width: 1050, height: 1400 },
   { src: "/img/dj-skyline.jpg", alt: "Resident DJ on the decks with the Manhattan skyline behind", caption: "Rooftop rituals", width: 1125, height: 1500 },
-  { src: "/img/disco-selfie.jpg", alt: "Sequins and a very good wig", caption: "Dress code enforced", width: 1400, height: 1050 },
+  { src: "/img/winter-sail.jpg", alt: "Crew in life vests sailing New York Harbor in winter", caption: "Harbor, off season", width: 1400, height: 1050 },
+  { src: "/img/bushwick-sunrise.jpg", alt: "The crew on a Bushwick corner as the sun comes up", caption: "Bushwick, sunrise shift", width: 1500, height: 1125 },
   { src: "/img/beach-nyc.jpg", alt: "Beach picnic with the city skyline behind", caption: "The city, from the sand", width: 1400, height: 1050 },
   { src: "/img/wburg-sunset.jpg", alt: "Sunset over the Williamsburg Bridge from a rooftop", caption: "Borough golden hour", width: 1500, height: 1125 },
 ];
@@ -111,7 +112,7 @@ export default function Home() {
             />
             <Image
               src="/img/boat-dance.jpg"
-              alt="Dancing on a boat deck under colored lights"
+              alt="Dancing under the Kosciuszko Bridge in pink light"
               width={1125}
               height={1500}
               sizes="(max-width: 860px) 50vw, 25vw"
