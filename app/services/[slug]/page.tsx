@@ -149,8 +149,16 @@ export default async function ServicePage({
             <div className="occasion-grid reveal">
               {occasions.map((o) => (
                 <Link key={o.slug} className="occasion-link" href={`/services/private-events/${o.slug}`}>
-                  <span>{o.name}</span>
-                  <em>{o.kicker}</em>
+                  <Image
+                    src={o.heroImg}
+                    alt={o.heroAlt}
+                    fill
+                    sizes="(max-width: 620px) 100vw, (max-width: 980px) 50vw, 33vw"
+                  />
+                  <div className="occasion-body">
+                    <span>{o.name}</span>
+                    <em>{o.kicker}</em>
+                  </div>
                 </Link>
               ))}
             </div>
