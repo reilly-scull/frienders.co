@@ -61,7 +61,6 @@ export default function PricingPage() {
       </section>
 
       <CTABand
-        variant="disco"
         title="Get a real quote."
         body="Send the date, the headcount, and the budget range. A producer replies within one business day with numbers you can hold us to."
         cta="Start the conversation"

@@ -69,7 +69,6 @@ export default function ServicesPage() {
       </section>
 
       <CTABand
-        variant="disco"
         title="Not sure what you need?"
         body="Start with the date and the headcount. A producer will map the rest with you, within one business day."
         cta="Start the conversation"
