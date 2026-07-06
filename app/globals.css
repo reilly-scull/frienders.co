@@ -487,6 +487,17 @@ footer { border-top: 1px solid var(--line); padding: 64px 28px 28px; }
 }
 .foot-bar .tag { font-style: italic; }
 
+/* ---------- Where map ---------- */
+.where-map {
+  border: 1px solid var(--line); border-radius: 14px;
+  background: rgba(244,239,230,0.015); padding: 10px;
+}
+.map-caption {
+  margin-top: 16px; font-size: 12.5px; font-weight: 700;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: rgba(244,239,230,0.55); text-align: center;
+}
+
 /* ---------- Whisper (serif accent) ---------- */
 .whisper {
   font-family: var(--font-serif), Didot, Georgia, serif;

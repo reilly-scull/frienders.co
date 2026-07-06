@@ -6,7 +6,7 @@ import { services, djs, productions } from "@/lib/content";
 const homeShots: Shot[] = [
   { src: "/img/hill-picnic.jpg", alt: "Picnic blankets on a hillside at golden hour", caption: "Upstate, uphill", width: 1400, height: 1050 },
   { src: "/img/sunset-hammock.jpg", alt: "Sunset over the water from a hammock on deck", caption: "Golden hour, every hour", width: 1050, height: 1400 },
-  { src: "/img/rooftop-sunset.jpg", alt: "Friends on a rooftop at sunset", caption: "Rooftop rituals", width: 1400, height: 1050 },
+  { src: "/img/dj-skyline.jpg", alt: "Resident DJ on the decks with the Manhattan skyline behind", caption: "Rooftop rituals", width: 1125, height: 1500 },
   { src: "/img/winter-sail.jpg", alt: "Crew in life vests sailing New York Harbor in winter", caption: "Harbor, off season", width: 1400, height: 1050 },
   { src: "/img/disco-selfie.jpg", alt: "Sequins and a very good wig", caption: "Dress code enforced", width: 1400, height: 1050 },
   { src: "/img/beach-nyc.jpg", alt: "Beach picnic with the city skyline behind", caption: "The city, from the sand", width: 1400, height: 1050 },
@@ -14,7 +14,7 @@ const homeShots: Shot[] = [
 ];
 
 const tickerItems = [
-  "Invite only",
+  "Private productions",
   "Private events",
   "Venues",
   "Sound & lighting",
@@ -104,10 +104,10 @@ export default function Home() {
           </div>
           <div className="story-photos reveal">
             <Image
-              src="/img/dj-skyline.jpg"
-              alt="Resident DJ on the decks with the Manhattan skyline behind"
-              width={1125}
-              height={1500}
+              src="/img/rooftop-sunset.jpg"
+              alt="Friends on a rooftop at golden hour"
+              width={1400}
+              height={1050}
               sizes="(max-width: 860px) 50vw, 25vw"
             />
             <Image
@@ -241,8 +241,8 @@ export default function Home() {
             <p className="lede">
               {productions.length} chapters and counting: the Hamptons,
               upstate, Mexico, the Mediterranean, and a few places we agreed
-              not to name. Our own parties are invite-only; the surest way in
-              is to throw something with us.
+              not to name. Every one was a private event somebody hired us to
+              build. Yours goes at the top of this page.
             </p>
           </div>
           <Gallery shots={homeShots} />

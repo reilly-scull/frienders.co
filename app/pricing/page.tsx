@@ -54,8 +54,8 @@ export default function PricingPage() {
 
           <p className="form-note reveal" style={{ marginTop: 26, maxWidth: 640 }}>
             Group trips, multi-day productions, and things that defy category
-            are quoted individually. Invite-only parties are not for sale,
-            which is rather the point.
+            are quoted individually. Our own parties are private events too:
+            somebody hires us, and the night follows. It could be you.
           </p>
         </div>
       </section>

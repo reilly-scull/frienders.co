@@ -2,7 +2,17 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import PageHero from "@/components/PageHero";
 import CTABand from "@/components/CTABand";
+import WhereMap, { type Spot } from "@/components/WhereMap";
 import { productions } from "@/lib/content";
+
+const spots: Spot[] = [
+  { id: "nyc", label: "New York City", lat: 40.7128, lng: -74.006 },
+  { id: "cdmx", label: "Mexico City", lat: 19.4326, lng: -99.1332 },
+  { id: "boulder", label: "Boulder", lat: 40.015, lng: -105.2705 },
+  { id: "vegas", label: "Las Vegas", lat: 36.1699, lng: -115.1398 },
+  { id: "grand-canyon", label: "Grand Canyon", lat: 36.0544, lng: -112.1401 },
+  { id: "zion", label: "Zion", lat: 37.2982, lng: -113.0263 },
+];
 
 export const metadata: Metadata = {
   title: "Productions",
@@ -21,10 +31,25 @@ export default function ProductionsPage() {
             Productions<span className="accent">.</span>
           </>
         }
-        sub="A running record of professionally good times. Some were ours, some were clients'. Our own parties are invite-only, not to keep anyone out, but because a room under 150 only works when everyone in it was meant to be there. The surest way in is to throw something with us."
-        img="/img/hillside-blanket.jpg"
-        alt="Lounging on a blanket over a green valley"
+        sub="A running record of professionally good times. Every one of these was a private event: no tickets, no door sales, just a host who wanted an unforgettable night and a crew that builds them. This is what it looks like when you hire us."
+        img="/img/island-nap.jpg"
+        alt="An afternoon nap on the sand after a long beach day"
       />
+
+      <section className="section-tint" style={{ paddingBottom: 64 }}>
+        <div className="wrap">
+          <div className="section-head reveal" style={{ marginBottom: 32 }}>
+            <p className="kicker">The territory</p>
+            <h2>Have rig, will travel.</h2>
+          </div>
+          <div className="reveal">
+            <WhereMap spots={spots} />
+            <p className="map-caption">
+              {spots.map((s) => s.label).join(" · ")}
+            </p>
+          </div>
+        </div>
+      </section>
 
       <section style={{ paddingTop: 40 }}>
         <div className="wrap">

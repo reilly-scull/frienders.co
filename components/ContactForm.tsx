@@ -19,7 +19,6 @@ const interests = [
   "Catering, bar & staff",
   "Party photography",
   "Party911 (it's urgent)",
-  "Get on the invite list",
   "Not sure yet",
 ];
 

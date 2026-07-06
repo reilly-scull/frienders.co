@@ -168,11 +168,11 @@ export const services: Service[] = [
     name: "Party Photography",
     short: "The night, documented",
     card: "Photographers who work dance floors, not step-and-repeats. Film and digital coverage of the night the way it actually felt.",
-    cardImg: "/img/photobooth.jpg",
-    cardAlt: "Costumed friends in a photo booth",
+    cardImg: "/img/bokeh-pair.jpg",
+    cardAlt: "Two friends close together under bokeh party lights",
     kicker: "The night, documented",
-    heroImg: "/img/photobooth.jpg",
-    heroAlt: "Friends piled into a photo booth mid-party",
+    heroImg: "/img/bokeh-pair.jpg",
+    heroAlt: "Two friends photographed close-up under glittering party lights",
     intro: [
       "Most event photography looks like evidence. Ours looks like the night felt: flash-lit, close, a little feral, and full of people who did not notice the camera.",
       "We shoot digital for speed and film for texture, and we know when to put the camera down. Edited galleries land within three business days; a same-week highlight reel is standard.",
@@ -190,6 +190,7 @@ export const services: Service[] = [
       { src: "/img/flash-crew.jpg", alt: "Flash selfie of the whole crew at a house party", width: 1127, height: 1500 },
       { src: "/img/wine-pair.jpg", alt: "Two friends posing at a wine bar", width: 1125, height: 1500 },
       { src: "/img/cheers-neon.jpg", alt: "Cocktail cheers caught in neon light", width: 1125, height: 1500 },
+      { src: "/img/photobooth.jpg", alt: "Friends piled into a photo booth mid-party", width: 1400, height: 933 },
     ],
     pricing: { label: "Event coverage", from: "$450/hr", note: "2-hour minimum; photo booth builds from $900" },
     cta: { title: "It happened. Prove it.", body: "Our photographers work dance floors, not step-and-repeats, so you get the night the way it actually felt.", button: "Book the coverage" },
@@ -232,11 +233,11 @@ export const services: Service[] = [
     name: "Party911",
     short: "Last-minute rescue",
     card: "Day-of cancellations, no-show vendors, unexpected disasters. A limited menu at premium prices, when you are out of options.",
-    cardImg: "/img/suit-bus.jpg",
-    cardAlt: "Guest in a suit mid-celebration on a party bus",
+    cardImg: "/img/night-sideways.jpg",
+    cardAlt: "Two guests holding each other up as the night goes sideways",
     kicker: "Emergency party support",
-    heroImg: "/img/suit-bus.jpg",
-    heroAlt: "Guest in a suit celebrating chaotically on a party bus",
+    heroImg: "/img/night-sideways.jpg",
+    heroAlt: "Two guests mid-laugh holding each other up in a dark bar",
     intro: [
       "The DJ cancelled at 3pm. The caterer stopped answering. The venue flooded. Whatever just happened, Party911 is our rapid-response line for events in trouble today.",
       "This is a limited menu at premium prices. We will be honest about what is possible on the clock you have. But if you are in a jam, we can help you get out of it.",
@@ -250,6 +251,7 @@ export const services: Service[] = [
     gallery: [
       { src: "/img/film-guys.jpg", alt: "Film-flash shot of the rescue crew mid-party", width: 1500, height: 995 },
       { src: "/img/bubbly-ice.jpg", alt: "A bathtub stocked with champagne and sparkling water on ice", width: 1125, height: 1500 },
+      { src: "/img/suit-bus.jpg", alt: "Guest in a suit celebrating chaotically on a party bus", width: 1125, height: 1500 },
     ],
     faq: [
       { q: "How fast can you actually get here?", a: "Within NYC, a DJ with a rig can typically be playing within 3 to 4 hours of a confirmed booking. Bar and staff bookings are usually faster. Outside the city, call and we will be straight with you." },
@@ -312,14 +314,7 @@ export const productions: Production[] = [
     name: "South Carolina",
     stats: "15 people. 5 days. Barrier-island beach house.",
     body: "Five days on a barrier island with a house full of friends and a schedule with exactly one item on it: the tide. Long beach days, longer dinners, and the kind of quiet that makes the loud parts feel earned.",
-    img: { src: "/img/island-nap.jpg", alt: "An afternoon nap on the sand outside the beach house", width: 1500, height: 1125 },
-  },
-  {
-    slug: "mexico",
-    name: "Mexico",
-    stats: "12 people. 3 days. Festival and after-parties.",
-    body: "Twelve people, three days, one music festival, and a pair of villas close enough to walk home from bad decisions. Festival days, villa after-parties, and a travel desk that had every transfer, ticket, and taco spot handled before wheels-down.",
-    img: { src: "/img/festival-crew.jpg", alt: "The crew at the festival grounds in Mexico", width: 1125, height: 1500 },
+    img: { src: "/img/desert-pool.jpg", alt: "Floating in the grotto pool near the beach house", width: 1125, height: 844 },
   },
   {
     slug: "sailing",
@@ -346,7 +341,7 @@ export const productions: Production[] = [
     name: "Desert Adventures",
     stats: "5 people. 1 week. Boulder to Joshua Tree.",
     body: "Five people, one week, and a route that read like a dare: parties in Boulder and Joshua Tree with pit stops across Utah and Nevada. Red rocks, empty highways, borrowed dance floors, swimming holes that were not on any map, and a sound system that never once got to rest.",
-    img: { src: "/img/desert-pool.jpg", alt: "Floaties in a desert swimming hole", width: 1125, height: 844 },
+    img: { src: "/img/hillside-blanket.jpg", alt: "Sprawled on a blanket over Boulder high country", width: 1500, height: 1125 },
   },
   {
     slug: "halloween",
@@ -408,8 +403,6 @@ export const directors: Person[] = [
   { name: "Hira", role: "Director, Travel", photo: "/img/team/hira.jpg"  },
   { name: "Lina", role: "Director, Marketing & Communications", photo: "/img/team/lina.jpg" },
   { name: "Greg", role: "Director, People & Chancellor of Sass", photo: "/img/team/greg.jpg" },
-  { name: "Kyle", role: "Director, Supply Chain Engineering" },
-  { name: "Halima", role: "Director, Recovery Services" },
   { name: "Ashley", role: "Director, Strategic Partnerships", photo: "/img/team/ashley.jpg"  },
 ];
 
