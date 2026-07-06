@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTABand from "@/components/CTABand";
 import { services, djs } from "@/lib/content";
+import { occasions } from "@/lib/occasions";
 
 export function generateStaticParams() {
   return services.map((s) => ({ slug: s.slug }));
@@ -132,6 +133,25 @@ export default async function ServicePage({
                     ))}
                   </ul>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {svc.slug === "private-events" && (
+        <section>
+          <div className="wrap">
+            <div className="section-head reveal">
+              <p className="kicker">By occasion</p>
+              <h2>Whatever you&apos;re celebrating.</h2>
+            </div>
+            <div className="occasion-grid reveal">
+              {occasions.map((o) => (
+                <Link key={o.slug} className="occasion-link" href={`/services/private-events/${o.slug}`}>
+                  <span>{o.name}</span>
+                  <em>{o.kicker}</em>
+                </Link>
               ))}
             </div>
           </div>

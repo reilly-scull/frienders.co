@@ -44,9 +44,8 @@ export const services: Service[] = [
       { title: "The morning after", body: "Strike, cleanup, lost-and-found, recovery services. The venue looks like nothing happened. You will know better." },
     ],
     gallery: [
-      { src: "/img/boat-girls.jpg", alt: "Friends celebrating on a boat in turquoise water", width: 1400, height: 1049 },
-      { src: "/img/bar-blooms.jpg", alt: "Celebration under a ceiling of flowers", width: 1500, height: 1125 },
       { src: "/img/park-blanket.jpg", alt: "An afternoon event on blankets in the park", width: 1125, height: 1500 },
+      { src: "/img/food.jpg", alt: "A catered course, mid-service", width: 1400, height: 1050 },
     ],
     pricing: { label: "Full-service production", from: "$5,000", note: "Flat fee scaled to scope; most fall between $5k and $25k" },
     cta: { title: "You bring the occasion. We bring the machine.", body: "Date, headcount, ambition level. A producer replies within one business day with a plan, not a pitch.", button: "Start the production" },
@@ -283,6 +282,14 @@ export type Production = {
   body: string;
   img: Img;
   extras?: Img[];
+  // Case-study scaffold: fill these in per production and the detail page
+  // at /productions/[slug] renders them in place of the placeholders.
+  caseStudy?: {
+    brief?: string;
+    build?: string;
+    night?: string;
+    numbers?: { label: string; value: string }[];
+  };
 };
 
 export const productions: Production[] = [

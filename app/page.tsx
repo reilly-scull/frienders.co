@@ -7,10 +7,9 @@ const homeShots: Shot[] = [
   { src: "/img/hill-picnic.jpg", alt: "Picnic blankets on a hillside at golden hour", caption: "Upstate, uphill", width: 1400, height: 1050 },
   { src: "/img/sunset-hammock.jpg", alt: "Sunset over the water from a hammock on deck", caption: "Golden hour, every hour", width: 1050, height: 1400 },
   { src: "/img/dj-skyline.jpg", alt: "Resident DJ on the decks with the Manhattan skyline behind", caption: "Rooftop rituals", width: 1125, height: 1500 },
-  { src: "/img/winter-sail.jpg", alt: "Crew in life vests sailing New York Harbor in winter", caption: "Harbor, off season", width: 1400, height: 1050 },
   { src: "/img/disco-selfie.jpg", alt: "Sequins and a very good wig", caption: "Dress code enforced", width: 1400, height: 1050 },
   { src: "/img/beach-nyc.jpg", alt: "Beach picnic with the city skyline behind", caption: "The city, from the sand", width: 1400, height: 1050 },
-  { src: "/img/rafting.jpg", alt: "Whitewater rafting crew mid-rapid", caption: "Team building, technically", width: 1284, height: 943 },
+  { src: "/img/wburg-sunset.jpg", alt: "Sunset over the Williamsburg Bridge from a rooftop", caption: "Borough golden hour", width: 1500, height: 1125 },
 ];
 
 const tickerItems = [

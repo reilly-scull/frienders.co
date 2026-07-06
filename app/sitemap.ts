@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
-import { services } from "@/lib/content";
+import { services, productions } from "@/lib/content";
+import { occasions } from "@/lib/occasions";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://frienders.co";
@@ -14,6 +15,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${base}/services/${s.slug}`,
       changeFrequency: "monthly" as const,
       priority: s.slug === "party911" ? 0.9 : 0.7,
+    })),
+    ...occasions.map((o) => ({
+      url: `${base}/services/private-events/${o.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    ...productions.map((p) => ({
+      url: `${base}/productions/${p.slug}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
     })),
   ];
 }

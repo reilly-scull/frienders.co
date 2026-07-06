@@ -487,7 +487,35 @@ footer { border-top: 1px solid var(--line); padding: 64px 28px 28px; }
 }
 .foot-bar .tag { font-style: italic; }
 
+/* ---------- Occasion links ---------- */
+.occasion-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; }
+.occasion-link {
+  border: 1px solid var(--line); border-radius: 12px; padding: 22px;
+  text-decoration: none; background: rgba(244,239,230,0.02);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+  display: flex; flex-direction: column; gap: 5px;
+}
+.occasion-link:hover { border-color: var(--sun); transform: translateY(-3px); }
+.occasion-link span {
+  font-family: var(--font-anton), Impact, sans-serif;
+  font-size: 20px; text-transform: uppercase; letter-spacing: 0.02em;
+}
+.occasion-link em { font-style: normal; font-size: 13px; color: var(--muted); }
+
+/* ---------- Case-study numbers ---------- */
+.cs-numbers { list-style: none; }
+.cs-numbers li { padding: 7px 0; font-size: 15px; color: var(--muted); border-top: 1px solid rgba(244,239,230,0.08); }
+.cs-numbers li:first-child { border-top: 0; }
+.cs-numbers b { color: var(--sun); font-weight: 700; margin-right: 8px; }
+
 /* ---------- Where map ---------- */
+.maps-grid { display: grid; grid-template-columns: 480fr 800fr; gap: 22px; align-items: end; }
+@media (max-width: 860px) { .maps-grid { grid-template-columns: 1fr; } }
+.map-label {
+  text-align: center; font-size: 11.5px; font-weight: 700;
+  letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--sun); margin-bottom: 12px;
+}
 .where-map {
   border: 1px solid var(--line); border-radius: 14px;
   background: rgba(244,239,230,0.015); padding: 10px;

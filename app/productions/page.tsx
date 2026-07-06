@@ -1,17 +1,41 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import CTABand from "@/components/CTABand";
-import WhereMap, { type Spot } from "@/components/WhereMap";
+import FriendersMaps, { type Spot } from "@/components/FriendersMaps";
 import { productions } from "@/lib/content";
 
-const spots: Spot[] = [
+const nycSpots: Spot[] = [
+  { id: "east-village", label: "East Village", lat: 40.727, lng: -73.984 },
+  { id: "williamsburg", label: "Williamsburg", lat: 40.714, lng: -73.961 },
+  { id: "gowanus", label: "Gowanus", lat: 40.673, lng: -73.99 },
+  { id: "rockaway", label: "Rockaway Beach", lat: 40.583, lng: -73.815 },
+  { id: "harbor", label: "New York Harbor", lat: 40.64, lng: -74.045 },
+];
+
+const worldSpots: Spot[] = [
   { id: "nyc", label: "New York City", lat: 40.7128, lng: -74.006 },
+  { id: "miami", label: "Miami", lat: 25.7617, lng: -80.1918 },
+  { id: "georgia", label: "Georgia", lat: 32.0809, lng: -81.0912 },
+  { id: "puerto-rico", label: "Puerto Rico", lat: 18.4655, lng: -66.1057 },
+  { id: "usvi", label: "US Virgin Islands", lat: 18.3381, lng: -64.8941 },
+  { id: "bvi", label: "British Virgin Islands", lat: 18.4286, lng: -64.6185 },
+  { id: "tulum", label: "Tulum", lat: 20.2114, lng: -87.4654 },
   { id: "cdmx", label: "Mexico City", lat: 19.4326, lng: -99.1332 },
   { id: "boulder", label: "Boulder", lat: 40.015, lng: -105.2705 },
   { id: "vegas", label: "Las Vegas", lat: 36.1699, lng: -115.1398 },
   { id: "grand-canyon", label: "Grand Canyon", lat: 36.0544, lng: -112.1401 },
   { id: "zion", label: "Zion", lat: 37.2982, lng: -113.0263 },
+  { id: "la", label: "Los Angeles", lat: 34.0522, lng: -118.2437 },
+  { id: "sf", label: "San Francisco", lat: 37.7749, lng: -122.4194 },
+  { id: "london", label: "London", lat: 51.5074, lng: -0.1278 },
+  { id: "paris", label: "Paris", lat: 48.8566, lng: 2.3522 },
+  { id: "st-tropez", label: "Saint-Tropez", lat: 43.2677, lng: 6.6407 },
+  { id: "tuscany", label: "Tuscany", lat: 43.7696, lng: 11.2558 },
+  { id: "corsica", label: "Corsica", lat: 42.0396, lng: 9.0129 },
+  { id: "sardinia", label: "Sardinia", lat: 40.1209, lng: 9.0129 },
+  { id: "ibiza", label: "Ibiza", lat: 38.9067, lng: 1.4206 },
 ];
 
 export const metadata: Metadata = {
@@ -43,10 +67,7 @@ export default function ProductionsPage() {
             <h2>Have rig, will travel.</h2>
           </div>
           <div className="reveal">
-            <WhereMap spots={spots} />
-            <p className="map-caption">
-              {spots.map((s) => s.label).join(" · ")}
-            </p>
+            <FriendersMaps nycSpots={nycSpots} worldSpots={worldSpots} />
           </div>
         </div>
       </section>
@@ -82,6 +103,9 @@ export default function ProductionsPage() {
                 <h3>{prod.name}</h3>
                 <p className="stats">{prod.stats}</p>
                 <p className="body">{prod.body}</p>
+                <Link className="section-foot-link" href={`/productions/${prod.slug}`}>
+                  The full story
+                </Link>
               </div>
             </article>
           ))}
