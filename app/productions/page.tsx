@@ -68,8 +68,8 @@ export default function ProductionsPage() {
           </>
         }
         sub="A running record of professionally good times. Every one of these was a private event: no tickets, no door sales, just a host who wanted an unforgettable night and a crew that builds them. This is what it looks like when you hire us."
-        img="/img/island-nap.jpg"
-        alt="An afternoon nap on the sand after a long beach day"
+        img="/img/hillside-blanket.jpg"
+        alt="Sprawled on a blanket over a green valley"
       />
 
       <section className="section-tint" style={{ paddingBottom: 64 }}>

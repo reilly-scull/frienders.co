@@ -40,8 +40,8 @@ export const occasions: Occasion[] = [
     slug: "weddings",
     name: "Weddings",
     kicker: "The best party either family has seen",
-    heroImg: "/img/bar-blooms.jpg",
-    heroAlt: "A celebration under a ceiling of flowers",
+    heroImg: "/img/tent-dance.jpg",
+    heroAlt: "Guests dancing dressed up under string lights at a tented reception",
     intro: [
       "We produce weddings the way we produce everything: like the best party anyone in attendance has been to, that happens to include a ceremony. Under-150 guest lists are our specialty, where every table is a good table.",
       "We slot in alongside your planner or run the production end to end: venue, sound, lighting, DJs, catering through Curated Kitchen, bar, staff, and the after-party nobody wants to admit they are planning. That one is our favorite part.",

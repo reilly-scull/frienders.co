@@ -28,11 +28,11 @@ export const services: Service[] = [
     name: "Private Events",
     short: "Full event production",
     card: "Birthdays, weddings, corporate offsites, things that defy category. Full production, hosted by us, thrown for you.",
-    cardImg: "/img/tent-dance.jpg",
-    cardAlt: "Guests dancing at a private tented event",
+    cardImg: "/img/bar-blooms.jpg",
+    cardAlt: "Guests in a group embrace under colored party lights",
     kicker: "Full production",
-    heroImg: "/img/tent-dance.jpg",
-    heroAlt: "Guests dancing under string lights at a private tented event",
+    heroImg: "/img/bar-blooms.jpg",
+    heroAlt: "Guests celebrating in a group embrace under magenta light",
     intro: [
       "You bring the occasion and the guest list. We bring everything else: the venue, the sound, the lights, the music, the bar, the food, and the people who make it all run.",
       "We work best with groups under 150 who care about production value. Every event gets a dedicated producer, a run-of-show, and a crew that has done this a hundred times and still loves it.",
@@ -219,6 +219,7 @@ export const services: Service[] = [
       { src: "/img/boat-laugh.jpg", alt: "Guest laughing on a boat on Lake Como", width: 1000, height: 1500 },
       { src: "/img/sunset-sail.jpg", alt: "Couple on a sailboat at sunset", width: 1500, height: 1125 },
       { src: "/img/como-boat.jpg", alt: "Guest laughing on a speedboat on an alpine lake", width: 934, height: 1400 },
+      { src: "/img/calm-boat.jpg", alt: "A quiet afternoon on the water between anchorages", width: 1500, height: 1125 },
       { src: "/img/beach-selfie.jpg", alt: "Group selfie on a warm-water beach", width: 1500, height: 1125 },
       { src: "/img/tuscany-dinner.jpg", alt: "A long lunch on a stone terrace abroad", width: 1050, height: 1400 },
     ],
@@ -314,6 +315,7 @@ export const productions: Production[] = [
       { src: "/img/golden-portrait.jpg", alt: "Golden hour in full gold dress code", width: 1400, height: 1050 },
       { src: "/img/gold-kit.jpg", alt: "The Gold Rush welcome kit with favors and wristbands", width: 1125, height: 1500 },
       { src: "/img/gold-lounge.jpg", alt: "Gold chains and a long recovery lounge", width: 1500, height: 1125 },
+      { src: "/img/den-morning.jpg", alt: "Still in gold, the morning after", width: 1500, height: 1125 },
     ],
   },
   {
@@ -321,7 +323,7 @@ export const productions: Production[] = [
     name: "South Carolina",
     stats: "15 people. 5 days. Barrier-island beach house.",
     body: "Five days on a barrier island with a house full of friends and a schedule with exactly one item on it: the tide. Long beach days, longer dinners, and the kind of quiet that makes the loud parts feel earned.",
-    img: { src: "/img/desert-pool.jpg", alt: "Floating in the grotto pool near the beach house", width: 1125, height: 844 },
+    img: { src: "/img/island-nap.jpg", alt: "An afternoon nap in the shade on the beach", width: 1500, height: 1125 },
   },
   {
     slug: "sailing",
@@ -348,7 +350,7 @@ export const productions: Production[] = [
     name: "Desert Adventures",
     stats: "5 people. 1 week. Boulder to Joshua Tree.",
     body: "Five people, one week, and a route that read like a dare: parties in Boulder and Joshua Tree with pit stops across Utah and Nevada. Red rocks, empty highways, borrowed dance floors, swimming holes that were not on any map, and a sound system that never once got to rest.",
-    img: { src: "/img/hillside-blanket.jpg", alt: "Sprawled on a blanket over Boulder high country", width: 1500, height: 1125 },
+    img: { src: "/img/desert-pool.jpg", alt: "Floaties in a desert swimming hole off the highway", width: 1125, height: 844 },
   },
   {
     slug: "halloween",
@@ -377,9 +379,6 @@ export const productions: Production[] = [
     stats: "Deep woods. Off grid. On purpose.",
     body: "A house at the end of a road that stops being a road. Firelight, forest air, a sound system running off our own power, and nights that go exactly as long as they want to. What happens in the woods stays pleasantly unverifiable.",
     img: { src: "/img/woodland-dusk.jpg", alt: "Lake house glowing at dusk in the woods", width: 1125, height: 1500 },
-    extras: [
-      { src: "/img/den-morning.jpg", alt: "The den, the morning after", width: 1500, height: 1125 },
-    ],
   },
   {
     slug: "public-records-takeover",
@@ -394,9 +393,6 @@ export const productions: Production[] = [
     stats: "12 people. 3 days of prep. 100 candles.",
     body: "Three days of prep for one dinner: rose petals everywhere, a hundred candles, rose prosecco on arrival, roast tomato soup, osso buco alla milanese, and a Barolo that deserved its own place setting. Proof that production value works at twelve covers, too.",
     img: { src: "/img/private-dining.jpg", alt: "Candlelit private dining room set for a Valentine's dinner", width: 1400, height: 934 },
-    extras: [
-      { src: "/img/calm-boat.jpg", alt: "A quiet moment on the water, just the two of them", width: 1500, height: 1125 },
-    ],
   },
 ];
 
