@@ -16,8 +16,12 @@ export default function CTABand({
       <div className="wrap reveal">
         <h2>{title}</h2>
         <p className="lede">{body}</p>
-        <Link className="btn btn-solid" href={href}>
+        <Link className="btn btn-solid btn-sparkle" href={href}>
           {cta}
+          <span className="sparkle s1" aria-hidden="true">&#10022;</span>
+          <span className="sparkle s2" aria-hidden="true">&#10022;</span>
+          <span className="sparkle s3" aria-hidden="true">&#10023;</span>
+          <span className="sparkle s4" aria-hidden="true">&#10023;</span>
         </Link>
       </div>
     </section>
