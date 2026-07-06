@@ -5,12 +5,26 @@ import { services, djs, productions } from "@/lib/content";
 
 const homeShots: Shot[] = [
   { src: "/img/hill-picnic.jpg", alt: "Picnic blankets on a hillside at golden hour", caption: "Upstate, uphill", width: 1400, height: 1050 },
+  { src: "/img/bunzy-group.jpg", alt: "The crew in all white on the lawn", caption: "Bunzy Day, all white", width: 930, height: 1400 },
+  { src: "/img/rockaway-pool.jpg", alt: "Pool party with a flag and floaties", caption: "Pool rules suspended", width: 1290, height: 1271 },
   { src: "/img/sunset-hammock.jpg", alt: "Sunset over the water from a hammock on deck", caption: "Puerto Rico, properly paced", width: 1050, height: 1400 },
   { src: "/img/dj-skyline.jpg", alt: "Resident DJ on the decks with the Manhattan skyline behind", caption: "Rooftop rituals", width: 1125, height: 1500 },
+  { src: "/img/snow-hike.jpg", alt: "The crew hiking through the snow to the lift", caption: "First chair earned", width: 1290, height: 919 },
+  { src: "/img/li-beach.jpg", alt: "Umbrellas and towels at a Long Island beach day", caption: "Long Island, low tide", width: 1400, height: 1050 },
+  { src: "/img/dj-duo.jpg", alt: "Two DJs playing back to back under red light", caption: "Back to back", width: 1400, height: 1050 },
   { src: "/img/winter-sail.jpg", alt: "Crew in life vests sailing New York Harbor in winter", caption: "Harbor, off season", width: 1400, height: 1050 },
+  { src: "/img/pool-heart.jpg", alt: "A heart-shaped floatie in the farmhouse pool", caption: "Summer's end, full send", width: 1050, height: 1400 },
+  { src: "/img/dog-overlook.jpg", alt: "A quiet moment with the dog above the river", caption: "The quiet parts", width: 1050, height: 1400 },
+  { src: "/img/costume-night.jpg", alt: "Costumed crew out in the night", caption: "October, obviously", width: 1050, height: 1400 },
+  { src: "/img/tray-shots.jpg", alt: "A tray of shots delivered to the table", caption: "A round arrives", width: 1050, height: 1400 },
   { src: "/img/bushwick-sunrise.jpg", alt: "The crew on a Bushwick corner as the sun comes up", caption: "Bushwick, sunrise shift", width: 1500, height: 1125 },
+  { src: "/img/beach-club.jpg", alt: "A Mediterranean beach club afternoon", caption: "Beach club, Med", width: 1400, height: 1050 },
+  { src: "/img/sail-drinks.jpg", alt: "Drinks up on a sailing trip", caption: "Anchors and aperitifs", width: 1050, height: 1400 },
   { src: "/img/beach-nyc.jpg", alt: "Beach picnic with the city skyline behind", caption: "The city, from the sand", width: 1400, height: 1050 },
+  { src: "/img/parachute-toss.jpg", alt: "A parachute game in full swing", caption: "Group activity, mandatory fun", width: 1400, height: 1050 },
+  { src: "/img/wine-lineup.jpg", alt: "A lineup of wine bottles for the tasting", caption: "Tasting, then not tasting", width: 1400, height: 1050 },
   { src: "/img/wburg-sunset.jpg", alt: "Sunset over the Williamsburg Bridge from a rooftop", caption: "Borough golden hour", width: 1500, height: 1125 },
+  { src: "/img/costume-baby.jpg", alt: "A committed and questionable costume choice", caption: "Commitment to the bit", width: 806, height: 1400 },
 ];
 
 const tickerItems = [
