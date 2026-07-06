@@ -200,6 +200,20 @@ nav.nav-open { background: var(--ink); }
   .btn-siren:hover::before { animation: none; opacity: 0; }
 }
 
+/* Touch devices have no hover state, so run the sparkle and siren
+   animations continuously there instead of waiting for a hover. */
+@media (hover: none) {
+  .btn-sparkle { box-shadow: 0 0 28px rgba(255, 179, 71, 0.35); }
+  .btn-sparkle .sparkle { animation: twinkle 2s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+  .btn-siren::before { opacity: 1; animation: siren-sweep 1.3s linear infinite; }
+  .btn-siren { animation: siren-glow 1.3s linear infinite; }
+}
+@media (hover: none) and (prefers-reduced-motion: reduce) {
+  .btn-sparkle .sparkle { animation: none; opacity: 1; transform: scale(1); }
+  .btn-siren::before { animation: none; opacity: 0; }
+  .btn-siren { animation: none; box-shadow: 0 0 20px 4px rgba(255, 70, 45, 0.5); }
+}
+
 .btn-ghost { border: 1.5px solid rgba(244,239,230,0.55); color: var(--paper); background: none; }
 .btn-ghost:hover { border-color: var(--paper); }
 .btn-alert { background: var(--coral); color: var(--ink); }
