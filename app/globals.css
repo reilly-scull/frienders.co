@@ -513,7 +513,7 @@ footer { border-top: 1px solid var(--line); padding: 64px 28px 28px; }
    the NYC column width equals the world map's rendered height, so both maps
    come out equal in height. The cards then stretch to the row height and
    center their SVGs, absorbing the last few pixels of padding drift. */
-.maps-grid { display: grid; grid-template-columns: 320fr 800fr; gap: 22px; }
+.maps-grid { display: grid; grid-template-columns: 280fr 800fr; gap: 22px; }
 .maps-grid > div { display: flex; flex-direction: column; }
 .maps-grid .where-map { flex: 1; display: flex; align-items: center; }
 .maps-grid .where-map svg { width: 100%; }

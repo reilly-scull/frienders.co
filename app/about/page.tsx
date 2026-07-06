@@ -158,7 +158,7 @@ export default function AboutPage() {
           <div className="gallery-strip reveal">
             <Image src="/img/beach-cheer.jpg" alt="Crew cheering on a beach" width={1024} height={768} sizes="(max-width: 720px) 100vw, 33vw" />
             <Image src="/img/living-room.jpg" alt="The whole crew piled into a living room" width={1500} height={1125} sizes="(max-width: 720px) 100vw, 33vw" />
-            <Image src="/img/parachute-beach.jpg" alt="Parachute games on the beach at sunset" width={1125} height={1500} sizes="(max-width: 720px) 100vw, 33vw" />
+            <Image src="/img/flower-parachute.jpg" alt="Resting in the flowers on the parachute" width={1500} height={1125} sizes="(max-width: 720px) 100vw, 33vw" />
           </div>
         </div>
       </section>

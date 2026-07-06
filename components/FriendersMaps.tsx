@@ -20,6 +20,7 @@ import countriesTopo from "world-atlas/countries-110m.json";
 export type Spot = { id: string; label: string; lat: number; lng: number };
 
 const LAND = "rgba(244, 239, 230, 0.07)";
+const LAND_SOLID = "rgba(244, 239, 230, 0.1)";
 const BORDER = "rgba(244, 239, 230, 0.22)";
 const PIN = "#ffb347";
 const PIN_STROKE = "#101014";
@@ -101,18 +102,20 @@ function Pin({
 
 // ---------- world (US through Europe) ----------
 const W_WIDTH = 800;
-const W_HEIGHT = 320;
+const W_HEIGHT = 280;
 const W_PAD = 8;
 
 // Fit to the window that actually contains the pins: US west coast through
-// the Mediterranean, cropped to the northern hemisphere latitudes in play.
-const WORLD_REGION: Feature<Geometry> = {
-  type: "Feature",
-  properties: {},
-  geometry: {
-    type: "Polygon",
-    coordinates: [[[-128, 13], [-128, 55], [17, 55], [17, 13], [-128, 13]]],
-  },
+// the Mediterranean, cropped to the latitudes in play. Corner points rather
+// than a polygon: polygon edges are great arcs in d3-geo, and the top edge of
+// a 140-degree-wide box bulges far north of its corner latitude, inflating
+// the fit. Two opposite corners bound the same Mercator box with no edges.
+const WORLD_REGION: MultiPoint = {
+  type: "MultiPoint",
+  coordinates: [
+    [-126, 15],
+    [14, 53],
+  ],
 };
 
 const worldProjection = geoMercator().fitExtent(
@@ -170,7 +173,7 @@ function WorldMap({ spots }: { spots: Spot[] }) {
         </defs>
         <g mask="url(#w-fade-x-mask)">
           {countryPaths.map((c) => (
-            <path key={c.key} d={c.d} fill={LAND} stroke={BORDER} strokeWidth={0.6} />
+            <path key={c.key} d={c.d} fill={LAND_SOLID} />
           ))}
         </g>
         {markers.map((m, i) => (
@@ -304,11 +307,6 @@ export default function FriendersMaps({
           <WorldMap spots={worldSpots} />
         </div>
       </div>
-      <p className="map-caption">
-        {[...nycSpots, ...worldSpots.filter((s) => s.id !== "nyc")]
-          .map((s) => s.label)
-          .join(" · ")}
-      </p>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTABand from "@/components/CTABand";
@@ -91,6 +92,25 @@ export default async function OccasionPage({
           </div>
         </div>
       </section>
+
+      {occ.gallery && (
+        <section>
+          <div className="wrap">
+            <div className="gallery-strip reveal" style={{ marginTop: 0 }}>
+              {occ.gallery.map((g) => (
+                <Image
+                  key={g.src}
+                  src={g.src}
+                  alt={g.alt}
+                  width={g.width}
+                  height={g.height}
+                  sizes="(max-width: 720px) 100vw, 33vw"
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <CTABand
         title={occ.ctaTitle}

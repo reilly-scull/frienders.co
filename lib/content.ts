@@ -367,6 +367,9 @@ export const productions: Production[] = [
     stats: "Rockaways to the islands. Sound included.",
     body: "Speakers in the sand, a parachute for shade, coolers with a plan, and the ocean doing the lighting design. Our beach parties run from Rockaway day trips to full weekends on warmer water.",
     img: { src: "/img/beach-towels.jpg", alt: "Friends lined up on beach towels on white sand", width: 1500, height: 1125 },
+    extras: [
+      { src: "/img/beach-selfie-2.jpg", alt: "Beach day group selfie", width: 1500, height: 1124 },
+    ],
   },
   {
     slug: "woodland",
@@ -391,6 +394,9 @@ export const productions: Production[] = [
     stats: "12 people. 3 days of prep. 100 candles.",
     body: "Three days of prep for one dinner: rose petals everywhere, a hundred candles, rose prosecco on arrival, roast tomato soup, osso buco alla milanese, and a Barolo that deserved its own place setting. Proof that production value works at twelve covers, too.",
     img: { src: "/img/private-dining.jpg", alt: "Candlelit private dining room set for a Valentine's dinner", width: 1400, height: 934 },
+    extras: [
+      { src: "/img/calm-boat.jpg", alt: "A quiet moment on the water, just the two of them", width: 1500, height: 1125 },
+    ],
   },
 ];
 
