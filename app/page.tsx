@@ -214,7 +214,7 @@ export default function Home() {
               you&apos;re in a jam, we can get you out of it.
             </p>
           </div>
-          <Link className="btn btn-alert reveal" href="/services/party911">
+          <Link className="btn btn-alert btn-siren reveal" href="/services/party911">
             Sound the alarm
           </Link>
         </div>
