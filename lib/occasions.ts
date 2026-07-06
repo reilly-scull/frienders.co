@@ -39,8 +39,8 @@ export const occasions: Occasion[] = [
     slug: "weddings",
     name: "Weddings",
     kicker: "The best party either family has seen",
-    heroImg: "/img/boat-kiss.jpg",
-    heroAlt: "A kiss on the bow in matching life vests",
+    heroImg: "/img/wburg-bar.jpg",
+    heroAlt: "jacqsmiley playing the reception from the bar top",
     intro: [
       "We produce weddings the way we produce everything: like the best party anyone in attendance has been to, that happens to include a ceremony. Under-150 guest lists are our specialty, where every table is a good table.",
       "We slot in alongside your planner or run the production end to end: venue, sound, lighting, DJs, catering through Curated Kitchen, bar, staff, and the after-party nobody wants to admit they are planning. That one is our favorite part.",
@@ -52,7 +52,7 @@ export const occasions: Occasion[] = [
     ],
     gallery: [
       { src: "/img/dock-toast.jpg", alt: "A champagne toast on the dock at dusk", width: 702, height: 510 },
-      { src: "/img/wburg-bar.jpg", alt: "jacqsmiley playing from the bar top at the reception", width: 1125, height: 1500 },
+      { src: "/img/boat-kiss.jpg", alt: "A kiss on the bow in matching life vests", width: 1500, height: 1125 },
     ],
     seoTitle: "Wedding Production and After-Parties in NYC",
     seoDescription: "Wedding production in New York City for celebrations under 150 guests: sound, lighting, DJs, catering, staff, and legendary after-parties. With or alongside your planner.",
