@@ -12,6 +12,12 @@ const nycSpots: Spot[] = [
   { id: "gowanus", label: "Gowanus", lat: 40.673, lng: -73.99 },
   { id: "rockaway", label: "Rockaway Beach", lat: 40.583, lng: -73.815 },
   { id: "harbor", label: "New York Harbor", lat: 40.64, lng: -74.045 },
+  { id: "battery-park", label: "Battery Park", lat: 40.7033, lng: -74.017 },
+  { id: "central-park", label: "Central Park", lat: 40.7829, lng: -73.9654 },
+  { id: "greenpoint", label: "Greenpoint", lat: 40.7304, lng: -73.951 },
+  { id: "bushwick", label: "Bushwick", lat: 40.6944, lng: -73.9213 },
+  { id: "446-kent", label: "446 Kent (South Williamsburg)", lat: 40.7095, lng: -73.967 },
+  { id: "300-powers", label: "300 Powers St", lat: 40.7137, lng: -73.943 },
 ];
 
 const worldSpots: Spot[] = [
@@ -36,6 +42,12 @@ const worldSpots: Spot[] = [
   { id: "corsica", label: "Corsica", lat: 42.0396, lng: 9.0129 },
   { id: "sardinia", label: "Sardinia", lat: 40.1209, lng: 9.0129 },
   { id: "ibiza", label: "Ibiza", lat: 38.9067, lng: 1.4206 },
+  { id: "maine", label: "Maine", lat: 44.3235, lng: -69.7653 },
+  { id: "vermont", label: "Vermont", lat: 44.0, lng: -72.7 },
+  { id: "woodstock", label: "Woodstock, NY", lat: 42.0409, lng: -74.1182 },
+  { id: "quogue", label: "Quogue, Long Island", lat: 40.8093, lng: -72.6089 },
+  { id: "madrid", label: "Madrid", lat: 40.4168, lng: -3.7038 },
+  { id: "brittany", label: "Brittany", lat: 48.2020, lng: -2.9326 },
 ];
 
 export const metadata: Metadata = {
