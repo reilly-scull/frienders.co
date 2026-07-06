@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Gallery, { type Shot } from "@/components/Gallery";
+import CTABand from "@/components/CTABand";
 import { services, djs, productions } from "@/lib/content";
 
 const homeShots: Shot[] = [
@@ -266,23 +267,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="cta-band">
-        <div className="wrap reveal">
-          <p className="kicker">Book us</p>
-          <h2>
+      <CTABand
+        kicker="Book us"
+        title={
+          <>
             Let&apos;s put a date
             <br />
             on it.
-          </h2>
-          <p className="lede">
-            Tell us the date, the headcount, and how ambitious we are allowed
-            to be. A producer replies within one business day.
-          </p>
-          <Link className="btn btn-solid" href="/contact">
-            Plan something
-          </Link>
-        </div>
-      </section>
+          </>
+        }
+      />
     </>
   );
 }
