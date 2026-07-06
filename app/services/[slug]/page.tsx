@@ -237,7 +237,7 @@ export default async function ServicePage({
               with &quot;PARTY911&quot; in the subject, your location, and your
               timeline. We triage fastest before 6pm.
             </p>
-            <Link className="btn btn-alert" href="/contact">
+            <Link className="btn btn-alert btn-siren" href="/contact">
               {svc.cta.button}
             </Link>
           </div>
