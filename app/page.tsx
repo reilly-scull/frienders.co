@@ -14,7 +14,7 @@ const homeShots: Shot[] = [
 ];
 
 const tickerItems = [
-  "Our parties",
+  "Invite only",
   "Private events",
   "Venues",
   "Sound & lighting",
@@ -169,6 +169,17 @@ export default function Home() {
                 );
               })}
           </div>
+        </div>
+      </section>
+
+      <section className="bliss-band">
+        <div className="reveal">
+          <div className="whisper">
+            Ephemeral bliss<span className="dim">,</span>
+            <br />
+            timeless memories<span className="dim">.</span>
+          </div>
+          <p>The night ends. The story doesn&apos;t.</p>
         </div>
       </section>
 

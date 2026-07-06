@@ -85,6 +85,28 @@ export default function AboutPage() {
       </section>
 
       <section className="section-tint">
+        <div className="wrap manifesto reveal">
+          <p className="kicker" style={{ marginBottom: 34 }}>What we believe</p>
+          <p>
+            We believe a dance floor is a <b>temporary country</b> with its own
+            citizens and no borders.
+          </p>
+          <p>
+            We believe the best nights are <b>built</b>, on purpose, by people
+            who take joy seriously.
+          </p>
+          <p>
+            We believe in <b>ephemeral bliss</b> and <b>timeless memories</b>:
+            the party disappears, the story never does.
+          </p>
+          <p>
+            And we believe you can tell how much a host loves their guests by
+            the <b>sound, the light, and the timing</b>.
+          </p>
+        </div>
+      </section>
+
+      <section>
         <div className="wrap">
           <div className="section-head reveal">
             <p className="kicker">How we work</p>
@@ -127,7 +149,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section>
+      <section className="section-tint">
         <div className="wrap">
           <div className="section-head reveal">
             <p className="kicker">The evidence</p>
