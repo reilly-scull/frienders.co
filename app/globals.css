@@ -132,6 +132,57 @@ nav.nav-open { background: var(--ink); }
 @media (prefers-reduced-motion: reduce) {
   .btn-sparkle:hover .sparkle { animation: none; opacity: 1; transform: scale(1); }
 }
+
+/* ---------- Disco CTA (alternate) ----------
+   On hover the pill's fill becomes the equator of a rotating mirror ball:
+   scrolling facet tiles with grout lines, parallax brightness variance,
+   faint pink/cyan light flecks, a sweeping specular glint, and static
+   spherical shading (dark limbs left/right, lit top / shaded bottom).
+   The button never changes shape or size; only the fill animates. */
+.btn-disco { position: relative; z-index: 0; }
+.btn-disco .btn-label { position: relative; z-index: 2; }
+.btn-sparkle .btn-label { position: relative; }
+.btn-disco::before {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  border-radius: 999px;
+  background-color: #b9c1cd;
+  background-image:
+    /* specular glint sweep */
+    linear-gradient(100deg, transparent 34%, rgba(255,255,255,0.55) 46%, rgba(255,255,255,0.1) 52%, transparent 62%),
+    /* spherical shading: dark limbs at the edges */
+    linear-gradient(90deg, rgba(8,10,16,0.62), rgba(8,10,16,0) 17% 83%, rgba(8,10,16,0.62)),
+    /* band shading: lit above, shaded below */
+    linear-gradient(180deg, rgba(255,255,255,0.28), rgba(255,255,255,0) 32%, rgba(0,0,0,0.22) 82%, rgba(0,0,0,0.38)),
+    /* pink and cyan light flecks */
+    repeating-linear-gradient(90deg, transparent 0 29px, rgba(255,110,185,0.22) 29px 32px, transparent 32px 63px),
+    repeating-linear-gradient(90deg, transparent 0 19px, rgba(120,220,255,0.20) 19px 21px, transparent 21px 42px),
+    /* facet brightness variance (parallax vs. tile layer) */
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.15) 0 18px, rgba(0,0,0,0.12) 18px 36px),
+    /* mirror tiles with bevel + grout */
+    repeating-linear-gradient(90deg, #d8dee8 0px, #b6bfcc 8px, #e8edf4 15px, #667080 16px, #d8dee8 18px),
+    /* tile rows (static) */
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.13) 0 12px, rgba(10,12,18,0.42) 12px 13.5px);
+  background-size:
+    280px 100%, 100% 100%, 100% 100%,
+    63px 100%, 42px 100%, 36px 100%, 18px 100%, 100% 100%;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  animation: disco-spin 3.8s linear infinite paused;
+}
+.btn-disco:hover::before { opacity: 1; animation-play-state: running; }
+.btn-disco:hover {
+  color: var(--ink);
+  box-shadow: 0 0 30px rgba(200, 215, 240, 0.35), 0 0 12px rgba(255, 179, 71, 0.2);
+}
+@keyframes disco-spin {
+  from { background-position: 280px 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0; }
+  to { background-position: -280px 0, 0 0, 0 0, -252px 0, -252px 0, -252px 0, -252px 0, 0 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn-disco::before { animation: none; }
+  .btn-disco:hover::before { opacity: 1; }
+}
 .btn-ghost { border: 1.5px solid rgba(244,239,230,0.55); color: var(--paper); background: none; }
 .btn-ghost:hover { border-color: var(--paper); }
 .btn-alert { background: var(--coral); color: var(--ink); }

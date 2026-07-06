@@ -31,12 +31,14 @@ export default function CTABand({
   body = "Tell us the date, the headcount, and how ambitious we are allowed to be. A producer replies within one business day.",
   cta = "Plan something",
   href = "/contact",
+  variant = "sparkle",
 }: {
   kicker?: string;
   title?: React.ReactNode;
   body?: string;
   cta?: string;
   href?: string;
+  variant?: "sparkle" | "disco";
 }) {
   return (
     <section className="cta-band">
@@ -44,13 +46,20 @@ export default function CTABand({
         {kicker && <p className="kicker">{kicker}</p>}
         <h2>{title}</h2>
         <p className="lede">{body}</p>
-        <Link className="btn btn-solid btn-sparkle" href={href}>
-          {cta}
-          <Sparkle pos="s1" size={18} delay={0} />
-          <Sparkle pos="s2" size={12} delay={550} />
-          <Sparkle pos="s3" size={22} delay={250} />
-          <Sparkle pos="s4" size={13} delay={850} />
-          <Sparkle pos="s5" size={9} delay={1150} />
+        <Link
+          className={`btn btn-solid ${variant === "disco" ? "btn-disco" : "btn-sparkle"}`}
+          href={href}
+        >
+          <span className="btn-label">{cta}</span>
+          {variant === "sparkle" && (
+            <>
+              <Sparkle pos="s1" size={18} delay={0} />
+              <Sparkle pos="s2" size={12} delay={550} />
+              <Sparkle pos="s3" size={22} delay={250} />
+              <Sparkle pos="s4" size={13} delay={850} />
+              <Sparkle pos="s5" size={9} delay={1150} />
+            </>
+          )}
         </Link>
       </div>
     </section>
