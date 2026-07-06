@@ -104,7 +104,6 @@ export const services: Service[] = [
     gallery: [
       { src: "/img/boat-dj.jpg", alt: "DJ playing on deck of a boat with headphones", width: 1125, height: 1500 },
       { src: "/img/dj-booth.jpg", alt: "DJ booth under blue geometric light", width: 1125, height: 1500 },
-      { src: "/img/club-film.jpg", alt: "DJ in a dark club, shot on film", width: 1500, height: 995 },
     ],
     pricing: { label: "Sound systems", from: "$400/day", note: "Delivered, set up, and tuned; lighting packages from $300" },
     cta: { title: "Our rigs, your room.", body: "Tell us the space and the crowd; we size the system, deliver it, and tune it before doors.", button: "Book the gear" },
@@ -350,7 +349,14 @@ export const productions: Production[] = [
     name: "Desert Adventures",
     stats: "5 people. 1 week. Boulder to Joshua Tree.",
     body: "Five people, one week, and a route that read like a dare: parties in Boulder and Joshua Tree with pit stops across Utah and Nevada. Red rocks, empty highways, borrowed dance floors, swimming holes that were not on any map, and a sound system that never once got to rest.",
-    img: { src: "/img/desert-pool.jpg", alt: "Floaties in a desert swimming hole off the highway", width: 1125, height: 844 },
+    img: { src: "/img/desert-rv.jpg", alt: "The crew and the rented RV parked in red-rock desert", width: 1500, height: 1125 },
+    extras: [
+      { src: "/img/zion.jpg", alt: "The canyon walls of Zion at midday", width: 1500, height: 1124 },
+      { src: "/img/joshua-tree.jpg", alt: "A desert fire pit blazing at dusk in Joshua Tree", width: 1124, height: 1500 },
+      { src: "/img/desert-beer.jpg", alt: "A cold one on a boulder above the desert horizon", width: 1500, height: 1125 },
+      { src: "/img/dj-blue.jpg", alt: "The desert party stage under blue geometric light", width: 1050, height: 1400 },
+      { src: "/img/desert-pool.jpg", alt: "A swimming hole that was not on any map", width: 1125, height: 844 },
+    ],
   },
   {
     slug: "halloween",
@@ -385,7 +391,7 @@ export const productions: Production[] = [
     name: "A Birthday at Public Records",
     stats: "Private takeover. World-class sound.",
     body: "Every year, one very lucky birthday takes over Public Records: a private takeover of one of the best-sounding rooms in New York. Our nightlife connections handle the room and the staff, our residents handle the music, and the birthday boy handles exactly nothing. Rinse, repeat, annually.",
-    img: { src: "/img/dj-blue.jpg", alt: "DJ set under blue geometric lights at the club", width: 1050, height: 1400 },
+    img: { src: "/img/club-film.jpg", alt: "The DJ working a dark club room, shot on film", width: 1500, height: 995 },
   },
   {
     slug: "valentines",
