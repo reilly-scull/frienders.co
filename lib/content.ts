@@ -104,6 +104,7 @@ export const services: Service[] = [
     gallery: [
       { src: "/img/boat-dj.jpg", alt: "DJ playing on deck of a boat with headphones", width: 1125, height: 1500 },
       { src: "/img/dj-booth.jpg", alt: "DJ booth under blue geometric light", width: 1125, height: 1500 },
+      { src: "/img/equipment-2.jpg", alt: "DJ controller with the dance-lighting package firing", width: 1050, height: 1400 },
     ],
     pricing: { label: "Sound systems", from: "$400/day", note: "Delivered, set up, and tuned; lighting packages from $300" },
     cta: { title: "Our rigs, your room.", body: "Tell us the space and the crowd; we size the system, deliver it, and tune it before doors.", button: "Book the gear" },
