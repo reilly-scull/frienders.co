@@ -323,6 +323,12 @@ export const productions: Production[] = [
     stats: "15 people. 5 days. Barrier-island beach house.",
     body: "Five days on a barrier island with a house full of friends and a schedule with exactly one item on it: the tide. Long beach days, longer dinners, and the kind of quiet that makes the loud parts feel earned.",
     img: { src: "/img/island-nap.jpg", alt: "An afternoon nap in the shade on the beach", width: 1500, height: 1125 },
+    extras: [
+      { src: "/img/sc-beach-dusk.jpg", alt: "The crew walking the beach at dusk, dressed for dinner", width: 1125, height: 1500 },
+      { src: "/img/sc-pool.jpg", alt: "Golden hour at the beach-house pool", width: 1500, height: 1125 },
+      { src: "/img/sc-beach-group.jpg", alt: "The whole house gathered on the sand at golden hour", width: 1500, height: 1125 },
+      { src: "/img/sc-pool-floaties.jpg", alt: "Pool floaties and raised arms at the beach house", width: 1125, height: 1500 },
+    ],
   },
   {
     slug: "sailing",
@@ -335,6 +341,7 @@ export const productions: Production[] = [
       { src: "/img/beach-crew.jpg", alt: "The crew ashore on a Caribbean sailing trip", width: 1024, height: 768 },
       { src: "/img/sail-liberty.jpg", alt: "Sailing past the Statue of Liberty at golden hour", width: 1125, height: 1500 },
       { src: "/img/sail-skyline.jpg", alt: "The crew in matching sailor hats with the Manhattan skyline behind", width: 1440, height: 1080 },
+      { src: "/img/sail-anchor.jpg", alt: "Anchored over clear water, swimmers off the bow", width: 1280, height: 720 },
     ],
   },
   {
