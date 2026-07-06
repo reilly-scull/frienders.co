@@ -359,8 +359,8 @@ export const productions: Production[] = [
   {
     slug: "desert-adventures",
     name: "Desert Adventures",
-    stats: "5 people. 1 week. Boulder to Joshua Tree.",
-    body: "Five people, one week, and a route that read like a dare: parties in Boulder and Joshua Tree with pit stops across Utah and Nevada. Red rocks, empty highways, borrowed dance floors, roadside barbecue, and a sound system that never once got to rest.",
+    stats: "6 people. 1 week. Boulder to Joshua Tree.",
+    body: "Six people, one week, and a route that read like a dare: parties in Boulder and Joshua Tree with pit stops across Utah and Nevada. Red rocks, empty highways, borrowed dance floors, roadside barbecue, and a sound system that never once got to rest.",
     img: { src: "/img/desert-rv.jpg", alt: "The crew and the rented RV parked in red-rock desert", width: 1500, height: 1125 },
     extras: [
       { src: "/img/zion.jpg", alt: "The canyon walls of Zion at midday", width: 1500, height: 1124 },
@@ -380,7 +380,6 @@ export const productions: Production[] = [
       { src: "/img/halloween-dj.jpg", alt: "The DJ in costume under red light", width: 1500, height: 1125 },
       { src: "/img/halloween-group.jpg", alt: "The costume crew crammed into one frame", width: 1500, height: 917 },
       { src: "/img/halloween-pair.jpg", alt: "Costumes holding up surprisingly well past midnight", width: 1125, height: 1500 },
-      { src: "/img/brunch-table.jpg", alt: "The Halloween after-party spread", width: 1500, height: 1125 },
     ],
   },
   {
@@ -419,9 +418,6 @@ export const productions: Production[] = [
     stats: "12 people. 3 days of prep. 100 candles.",
     body: "Three days of prep for one dinner: rose petals everywhere, a hundred candles, rose prosecco on arrival, roast tomato soup, osso buco alla milanese, and a Barolo that deserved its own place setting. Proof that production value works at twelve covers, too.",
     img: { src: "/img/private-dining.jpg", alt: "Candlelit private dining room set for a Valentine's dinner", width: 1400, height: 934 },
-    extras: [
-      { src: "/img/valentines-2.jpg", alt: "A hundred candles, up close", width: 1500, height: 1000 },
-    ],
   },
 ];
 
