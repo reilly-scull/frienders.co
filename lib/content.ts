@@ -407,7 +407,7 @@ export const leadership: Person[] = [
   { name: "Kathryn", role: "Chief Operating Officer", photo: "/img/team/kathryn.jpg"  },
   { name: "Reilly", role: "Chief Technology Officer, Chairman of the Board", photo: "/img/team/reilly.jpg" },
   { name: "Evan", role: "Chief Financial Officer", photo: "/img/team/evan.jpg"  },
-  { name: "Wendy", role: "Chief of Staff" },
+  { name: "Wendy", role: "Chief of Staff", photo: "/img/team/wendy.jpg" },
   { name: "Alain", role: "General Counsel", photo: "/img/team/alain.jpg" },
 ];
 
