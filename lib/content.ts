@@ -441,12 +441,20 @@ export const directors: Person[] = [
   { name: "Lina", role: "Director, Marketing & Communications", photo: "/img/team/lina.jpg" },
   { name: "Greg", role: "Director, Creative", photo: "/img/team/greg.jpg" },
   { name: "Ashley", role: "Director, Strategic Partnerships", photo: "/img/team/ashley.jpg"  },
+  { name: "Kyle", role: "Director, Lighting", photo: "/img/team/kyle.jpg" },
 ];
 
 export const production: Person[] = [
-  { name: "Kelsea", role: "Producer", photo: "/img/team/kelsea.jpg" },
-  { name: "Derek", role: "Producer" },
+  { name: "Kelsea", role: "Producer (New York)", photo: "/img/team/kelsea.jpg" },
+  { name: "Derek", role: "Producer (New York)" },
+  { name: "Eugenio", role: "Producer (New York)", photo: "/img/team/eugenio.jpg" },
+  { name: "Heather", role: "Producer (New York)" },
+  { name: "Michelle", role: "Producer (New York)" },
+  { name: "Kyle “The Barnikel”", role: "Producer (New York)", photo: "/img/team/kyle-barnikel.jpg" },
+  { name: "Saaim Ahmed", role: "Producer (Dallas)", photo: "/img/team/saaim.jpg" },
   { name: "Wendy", role: "Producer (Miami)", photo: "/img/team/wendy.jpg" },
+  { name: "Manoli", role: "Producer (Miami)" },
+  { name: "Fred", role: "Producer (Los Angeles)", photo: "/img/team/fred.jpg" },
   { name: "Yashar", role: "Production Support" },
 ];
 
