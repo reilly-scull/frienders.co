@@ -44,6 +44,7 @@ export default async function ProductionPage({
         sub={prod.stats}
         img={prod.img.src}
         alt={prod.img.alt}
+        imgPosition={prod.heroPosition}
       />
 
       <section>

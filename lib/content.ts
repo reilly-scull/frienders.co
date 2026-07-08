@@ -290,6 +290,9 @@ export type Production = {
   stats: string;
   body: string;
   img: Img;
+  // Optional object-position override for the detail-page hero, mainly for
+  // portrait photos used as a wide banner (see PageHero's imgPosition prop).
+  heroPosition?: string;
   extras?: Img[];
   // Case-study scaffold: fill these in per production and the detail page
   // at /productions/[slug] renders them in place of the placeholders.
@@ -358,7 +361,6 @@ export const productions: Production[] = [
       { src: "/img/sunset-sail.jpg", alt: "Sunset over the bow on an evening sail", width: 1500, height: 1125 },
       { src: "/img/sail-selfie.jpg", alt: "Captain-hat selfie somewhere off the coast", width: 1500, height: 1127 },
       { src: "/img/sail-travis.jpg", alt: "At the helm on a week-long sailing charter", width: 994, height: 1500 },
-      { src: "/img/captain-lounge.jpg", alt: "Lounging in the cabin, captain's hat on", width: 1500, height: 844 },
       { src: "/img/boat-dance-poster.jpg", alt: "Dancing in the cabin, life vest and all", width: 452, height: 800, video: "/videos/boat-dance-party.mp4" },
       { src: "/img/boat-party-poster.jpg", alt: "La bamba breaks out on the boat", width: 452, height: 800, video: "/videos/boat-party-la-bamba.mp4" },
     ],
@@ -408,6 +410,14 @@ export const productions: Production[] = [
       { src: "/img/parachute-beach.jpg", alt: "Parachute games at a Mediterranean beach party", width: 1125, height: 1500 },
       { src: "/img/captain-guy.jpg", alt: "The off-grid sound rig, beach edition", width: 1125, height: 1500 },
     ],
+  },
+  {
+    slug: "pool-parties",
+    name: "Pool Parties",
+    stats: "Backyards to bougainvillea. Floaties non-negotiable.",
+    body: "No ocean required. A fence, a filter, and a few dozen good decisions later, any backyard pool becomes the party. Day drinking, cannonball contests, and a speaker on the deck doing more work than the pump.",
+    img: { src: "/img/pool-hangout.jpg", alt: "Poolside hangout at golden hour", width: 960, height: 1280 },
+    heroPosition: "center 62%",
   },
   {
     slug: "woodland",
