@@ -451,7 +451,7 @@ export const production: Person[] = [
   { name: "Heather", role: "Producer (New York)" },
   { name: "Michelle", role: "Producer (New York)" },
   { name: "Kyle “The Barnikel”", role: "Producer (New York)", photo: "/img/team/kyle-barnikel.jpg" },
-  { name: "JP “Pepperflake”", role: "Producer (New York)" },
+  { name: "JP “Pepperflake”", role: "Producer (New York)", photo: "/img/team/jp.jpg" },
   { name: "Saaim Ahmed", role: "Producer (Dallas)", photo: "/img/team/saaim.jpg" },
   { name: "Wendy", role: "Producer (Miami)", photo: "/img/team/wendy.jpg" },
   { name: "Manoli", role: "Producer (Miami)" },
