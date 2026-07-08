@@ -456,7 +456,7 @@ export const production: Person[] = [
   { name: "Wendy", role: "Producer (Miami)", photo: "/img/team/wendy.jpg" },
   { name: "Manoli", role: "Producer (Miami)" },
   { name: "Fred", role: "Producer (Los Angeles)", photo: "/img/team/fred.jpg" },
-  { name: "Yashar", role: "Production Support" },
+  { name: "Yashar", role: "Production Support", photo: "/img/team/yashar.jpg" },
 ];
 
 // DRAFT pricing anchors pending Reilly's sign-off. Sourced from NYC market
