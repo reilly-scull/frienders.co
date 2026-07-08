@@ -69,13 +69,8 @@ export default function TeamPage() {
             ))}
           </div>
           <div className="team-grid reveal" style={{ marginTop: 16 }}>
-            {directors.map((p, i) => (
+            {[...directors, ...production].map((p, i) => (
               <PersonCard key={p.name} person={p} i={i + 1} />
-            ))}
-          </div>
-          <div className="team-grid reveal" style={{ marginTop: 16 }}>
-            {production.map((p, i) => (
-              <PersonCard key={p.name} person={p} i={i + 2} />
             ))}
           </div>
         </div>
