@@ -309,7 +309,7 @@ export const productions: Production[] = [
   },
   {
     slug: "gold-party",
-    name: "The Gold Party",
+    name: "The Gold Rush",
     stats: "20 people. Upstate New York. Dress code: gold.",
     body: "Twenty people in a house upstate, every one of them in gold. Costumes, floor-to-ceiling decorations, three DJs, and a massage table running all weekend because recovery is part of the program. The photos look like a fever dream. They are accurate.",
     img: { src: "/img/wings.jpg", alt: "Performer in glowing gold illuminated wings at night", width: 1400, height: 1050 },
@@ -451,6 +451,7 @@ export const production: Person[] = [
   { name: "Heather", role: "Producer (New York)" },
   { name: "Michelle", role: "Producer (New York)" },
   { name: "Kyle “The Barnikel”", role: "Producer (New York)", photo: "/img/team/kyle-barnikel.jpg" },
+  { name: "JP “Pepperflake”", role: "Producer (New York)" },
   { name: "Saaim Ahmed", role: "Producer (Dallas)", photo: "/img/team/saaim.jpg" },
   { name: "Wendy", role: "Producer (Miami)", photo: "/img/team/wendy.jpg" },
   { name: "Manoli", role: "Producer (Miami)" },

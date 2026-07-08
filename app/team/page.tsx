@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Team",
   description:
     "The leadership, directors, producers, and resident DJs behind Frienders Collective, the NYC private event production and experiences company.",
-  openGraph: { images: ["/img/formal-fountain.jpg"] },
+  openGraph: { images: ["/img/the-board.jpg"] },
 };
 
 const tints = ["#ffb347", "#ff5c47", "#67c6e8", "#b78bff"];
@@ -55,8 +55,8 @@ export default function TeamPage() {
           </>
         }
         sub="Leadership, directors, and the producers who run the room on the day. Titles are real. So is the org chart."
-        img="/img/formal-fountain.jpg"
-        alt="The team dressed up around a city fountain"
+        img="/img/the-board.jpg"
+        alt="The board in gold jackets around the boardroom desk"
       />
 
       <section>

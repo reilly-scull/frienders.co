@@ -57,6 +57,7 @@ export const occasions: Occasion[] = [
     gallery: [
       { src: "/img/dock-toast.jpg", alt: "A champagne toast on the dock at dusk", width: 702, height: 510 },
       { src: "/img/boat-kiss.jpg", alt: "A kiss on the bow in matching life vests", width: 1500, height: 1125 },
+      { src: "/img/formal-fountain.jpg", alt: "Dressed-up guests gathered at a city fountain", width: 1500, height: 1125 },
     ],
     seoTitle: "Wedding Production and After-Parties in NYC",
     seoDescription: "Wedding production in New York City for celebrations under 150 guests: sound, lighting, DJs, catering, staff, and legendary after-parties. With or alongside your planner.",
