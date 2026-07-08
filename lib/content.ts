@@ -158,7 +158,7 @@ export const services: Service[] = [
       { src: "/img/breads.jpg", alt: "Jalapeno-cheddar pretzel knots, fresh from the oven", width: 1125, height: 1500 },
       { src: "/img/steak-dinner.jpg", alt: "Beef wellington, plated, with a glass of red", width: 1125, height: 1500 },
     ],
-    pricing: { label: "Catering", from: "$45/head", note: "Passed bites; plated dinners from $125/head. Bartenders from $60/hr, 4-hour minimum" },
+    pricing: { label: "Catering", from: "$75/head", note: "Passed bites; plated dinners from $125/head. Bartenders from $60/hr, 4-hour minimum" },
     cta: { title: "Feed them well. They will forgive anything.", body: "From passed bites for 20 to plated for 120, tell us the occasion and we will build the menu around it.", button: "Build the menu" },
     seoTitle: "Event Catering, Bartenders, and Staff in NYC",
     seoDescription: "Event catering with Curated Kitchen, bar programs, bartenders from $60/hr, and event staff for hire in New York City. Passed bites for 20 to plated dinners for 120.",

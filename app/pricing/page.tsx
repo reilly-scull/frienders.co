@@ -6,7 +6,7 @@ import { pricingRows } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Pricing",
   description:
-    "Starting prices for Frienders Collective: event production from $5,000, resident DJs from $1,000, sound systems from $400/day, catering from $45/head, party photography from $450/hr, and Party911 same-day rescue from $1,500.",
+    "Starting prices for Frienders Collective: event production from $5,000, resident DJs from $1,000, sound systems from $400/day, catering from $75/head, party photography from $450/hr, and Party911 same-day rescue from $1,500.",
 };
 
 export default function PricingPage() {
