@@ -446,7 +446,7 @@ export const directors: Person[] = [
 
 export const production: Person[] = [
   { name: "Kelsea", role: "Producer (New York)", photo: "/img/team/kelsea.jpg" },
-  { name: "Derek", role: "Producer (New York)" },
+  { name: "Derek", role: "Producer (New York)", photo: "/img/team/derek.jpg" },
   { name: "Eugenio", role: "Producer (New York)", photo: "/img/team/eugenio.jpg" },
   { name: "Heather", role: "Producer (New York)" },
   { name: "Michelle", role: "Producer (New York)" },

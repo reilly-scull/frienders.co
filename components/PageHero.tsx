@@ -8,6 +8,7 @@ export default function PageHero({
   alt,
   compact,
   tall,
+  lowText,
   imgPosition,
 }: {
   kicker: string;
@@ -17,10 +18,11 @@ export default function PageHero({
   alt: string;
   compact?: boolean;
   tall?: boolean;
+  lowText?: boolean;
   imgPosition?: string;
 }) {
   return (
-    <div className={`page-hero ${compact ? "compact" : ""} ${tall ? "tall" : ""}`}>
+    <div className={`page-hero ${compact ? "compact" : ""} ${tall ? "tall" : ""} ${lowText ? "low-text" : ""}`}>
       <div className="page-hero-bg">
         <Image
           src={img}
