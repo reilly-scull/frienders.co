@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/PageHero";
 import CTABand from "@/components/CTABand";
+import MediaLightbox from "@/components/MediaLightbox";
 import { productions } from "@/lib/content";
 
 export function generateStaticParams() {
@@ -90,19 +90,12 @@ export default async function ProductionPage({
 
       {prod.extras && (
         <section>
-          <div className="wrap">
-            <div className="gallery-strip reveal" style={{ marginTop: 0 }}>
-              {prod.extras.map((x) => (
-                <Image
-                  key={x.src}
-                  src={x.src}
-                  alt={x.alt}
-                  width={x.width}
-                  height={x.height}
-                  sizes="(max-width: 720px) 100vw, 33vw"
-                />
-              ))}
-            </div>
+          <div className="wrap reveal">
+            <MediaLightbox
+              items={prod.extras}
+              gridClassName="gallery-strip flush-top"
+              sizes="(max-width: 720px) 100vw, 33vw"
+            />
           </div>
         </section>
       )}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import PageHero from "@/components/PageHero";
 import CTABand from "@/components/CTABand";
 import FriendersMaps, { type Spot } from "@/components/FriendersMaps";
+import MediaLightbox from "@/components/MediaLightbox";
 import { productions } from "@/lib/content";
 
 const nycSpots: Spot[] = [
@@ -97,18 +98,11 @@ export default function ProductionsPage() {
                   sizes="(max-width: 820px) 100vw, 50vw"
                 />
                 {prod.extras && (
-                  <div className="trip-extras">
-                    {prod.extras.map((x) => (
-                      <Image
-                        key={x.src}
-                        src={x.src}
-                        alt={x.alt}
-                        width={x.width}
-                        height={x.height}
-                        sizes="(max-width: 820px) 33vw, 16vw"
-                      />
-                    ))}
-                  </div>
+                  <MediaLightbox
+                    items={prod.extras}
+                    gridClassName="trip-extras"
+                    sizes="(max-width: 820px) 33vw, 16vw"
+                  />
                 )}
               </div>
               <div className="reveal">

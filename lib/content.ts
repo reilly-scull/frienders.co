@@ -1,4 +1,6 @@
-export type Img = { src: string; alt: string; width: number; height: number };
+// `video`, when present, makes this a video tile: `src` is the poster frame
+// shown in the grid, and `video` is the clip that plays in the lightbox.
+export type Img = { src: string; alt: string; width: number; height: number; video?: string };
 
 export type Service = {
   slug: string;
@@ -106,6 +108,7 @@ export const services: Service[] = [
       { src: "/img/dj-booth.jpg", alt: "DJ booth under blue geometric light", width: 1125, height: 1500 },
       { src: "/img/equipment-2.jpg", alt: "DJ controller with the dance-lighting package firing", width: 1050, height: 1400 },
       { src: "/img/street-pair.jpg", alt: "Our rig outside the pencil factory party in Greenpoint", width: 1500, height: 1125 },
+      { src: "/img/dj-booth-blue.jpg", alt: "Working the booth under blue wash lighting", width: 1125, height: 1500 },
     ],
     pricing: { label: "Sound systems", from: "$400/day", note: "Delivered, set up, and tuned; lighting packages from $300" },
     cta: { title: "Our rigs, your room.", body: "Tell us the space and the crowd; we size the system, deliver it, and tune it before doors.", button: "Book the gear" },
@@ -125,6 +128,9 @@ export const services: Service[] = [
     intro: [
       "Our residents grew up in Brooklyn warehouses, dust-covered playa stages, and boat decks in three time zones. They read rooms, not just requests.",
       "Every booking includes an advance conversation about your crowd and your arc for the night. Pair any resident with our sound and lighting rigs for a turnkey dance floor.",
+    ],
+    gallery: [
+      { src: "/img/lina-rooftop.jpg", alt: "Lina Grace on the decks, Manhattan skyline behind", width: 1500, height: 1125 },
     ],
     pricing: { label: "Resident DJ, 4-hour set", from: "$1,000", note: "Includes the advance call; add our rig for a turnkey floor" },
     cta: { title: "Your dance floor has an opening.", body: "Tell us your crowd and your arc for the night, and we will match you with the resident who already plays it.", button: "Book a resident" },
@@ -305,6 +311,7 @@ export const productions: Production[] = [
     extras: [
       { src: "/img/farmhouse-pool.jpg", alt: "The pool cabana rig at the Hamptons farmhouse", width: 1125, height: 1500 },
       { src: "/img/summers-end-2.jpg", alt: "The farmhouse pool, vineyard view included", width: 1125, height: 1500 },
+      { src: "/img/summers-end-tub.jpg", alt: "The whole crew packed into the hot tub", width: 1500, height: 1125 },
     ],
   },
   {
@@ -351,6 +358,9 @@ export const productions: Production[] = [
       { src: "/img/sunset-sail.jpg", alt: "Sunset over the bow on an evening sail", width: 1500, height: 1125 },
       { src: "/img/sail-selfie.jpg", alt: "Captain-hat selfie somewhere off the coast", width: 1500, height: 1127 },
       { src: "/img/sail-travis.jpg", alt: "At the helm on a week-long sailing charter", width: 994, height: 1500 },
+      { src: "/img/captain-lounge.jpg", alt: "Lounging in the cabin, captain's hat on", width: 1500, height: 844 },
+      { src: "/img/boat-dance-poster.jpg", alt: "Dancing in the cabin, life vest and all", width: 452, height: 800, video: "/videos/boat-dance-party.mp4" },
+      { src: "/img/boat-party-poster.jpg", alt: "La bamba breaks out on the boat", width: 452, height: 800, video: "/videos/boat-party-la-bamba.mp4" },
     ],
   },
   {
