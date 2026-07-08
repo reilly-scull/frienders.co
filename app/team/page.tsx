@@ -45,8 +45,9 @@ export default function TeamPage() {
   return (
     <>
       <PageHero
+        tall
         lowText
-        imgPosition="center 78%"
+        imgPosition="center 42%"
         kicker="The team"
         title={
           <>
